@@ -29,9 +29,18 @@ public class PlayerAttack : MonoBehaviour
         cooldownTimer = 0;
 
         int spellIndex = FindSpell();
-
-        spells[spellIndex].transform.position = firePoint.position;
-        spells[spellIndex].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        GameObject spell = spells[spellIndex];
+        
+        spell.SetActive(true);
+        
+        spell.transform.position = firePoint.position;
+        spell.transform.rotation = Quaternion.identity;
+        
+        // Debug direction
+        float dir = Mathf.Sign(transform.localScale.x);
+        Debug.Log($"Player facing: {transform.localScale.x}, Direction: {dir}");
+        
+        spell.GetComponent<Projectile>().SetDirection(dir);
     }
 
     private int FindSpell()
