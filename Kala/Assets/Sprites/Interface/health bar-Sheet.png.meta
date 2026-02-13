@@ -100,10 +100,10 @@ TextureImporter:
       name: health bar-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 256
-        height: 64
+        x: 9
+        y: 219
+        width: 172
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: health bar-Sheet_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 256
-        height: 64
+        x: 289
+        y: 228
+        width: 145
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +142,10 @@ TextureImporter:
       name: health bar-Sheet_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
-        width: 256
-        height: 64
+        x: 545
+        y: 228
+        width: 145
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

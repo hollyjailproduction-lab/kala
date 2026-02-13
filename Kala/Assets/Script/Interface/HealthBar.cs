@@ -21,7 +21,7 @@ public class HealthBar : MonoBehaviour
             return;
         }
         
-        maxRightMask = barRect.rect.width - mask.padding.z - mask.padding.x;
+        maxRightMask = barRect.rect.width - mask.padding.x - mask.padding.z;
         
         healthIndicator.text = $"{healthSource.currentHp}/{healthSource.maxHp}";
         
