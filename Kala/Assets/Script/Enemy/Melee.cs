@@ -2,20 +2,24 @@ using UnityEngine;
 
 public class Melee : MonoBehaviour
 {
+    [Header("Attack")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
+
+    [Header("Collider")]
     [SerializeField] private float colliderDistance;
     [SerializeField]private BoxCollider2D boxCollider;
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
     //buat player
+    [Header("Player")]
     private Animator anim;
     private Health playerHealth;
     private EnemyPatrol enemyPatrol;
 
-    private void Awake()
+    private void Awake()    
     {
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
@@ -34,7 +38,8 @@ public class Melee : MonoBehaviour
             }
         }
 
-            if(EnemyPatrol != null);
+            if(enemyPatrol != null);
+            enemyPatrol.enabled = !PlayerInSight();
     }
 
     private bool PlayerInSight()

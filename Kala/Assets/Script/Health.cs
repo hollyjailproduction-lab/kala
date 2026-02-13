@@ -23,9 +23,13 @@ public class Health : MonoBehaviour
         currentHp = Mathf.Clamp(currentHp, 0, maxHp);
         
         // Panggil health bar update
-        HealthBar healthBar = FindObjectOfType<HealthBar>();
-        if (healthBar != null)
+        if (gameObject.CompareTag("Player"))
+        {
+            HealthBar healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar != null)
             healthBar.SetValue(currentHp);
+        }
+        
 
         if (currentHp > 0)
         {
@@ -35,17 +39,19 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
+                anim.SetTrigger("die");
+
+                //player
+                if(GetComponent<PlayerMovement>() != null)
+                    GetComponent<PlayerMovement>().enabled = false;
+
+                //enemy
+                if(GetComponentInParent<EnemyPatrol>() != null)
+                    GetComponentInParent<EnemyPatrol>().enabled = false;
+
+                if(GetComponentInParent<Melee>() != null)
+                    GetComponentInParent<Melee>().enabled = false;
                 dead = true;
-
-                if (anim != null)
-                {
-                    anim.SetTrigger("die");
-                }
-
-                if (playerMovement != null)
-                {
-                    playerMovement.enabled = false;
-                }
 
             }
 
