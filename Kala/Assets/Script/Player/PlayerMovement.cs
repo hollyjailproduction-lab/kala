@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement Instance { get; private set; } 
     private Rigidbody2D rb;
     private Animator anim;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D capsuleCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
     private float originalScaleX;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         Instance = this;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
         originalScaleX = transform.localScale.x;
 
 
@@ -88,13 +88,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
     }
 
         private bool onWall()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, new Vector2(transform.localScale.x,0), 0.1f, wallLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size, 0f, new Vector2(transform.localScale.x,0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
 
