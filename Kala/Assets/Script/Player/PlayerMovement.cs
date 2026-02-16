@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get; private set; } 
     private Rigidbody2D rb;
     private Animator anim;
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    private float originalScaleX;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float speed;
@@ -15,35 +17,36 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        // Get references to components
+        // reference
+        Instance = this;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        originalScaleX = transform.localScale.x;
+
+
+        
     }
 
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        // Flip the player
         if (horizontalInput > 0.01f)
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3 (-originalScaleX, transform.localScale.y, transform.localScale.z);
 
         anim.SetBool("grounded", isGrounded());
         anim.SetBool("run", horizontalInput != 0);
 
-        // Update cooldown
         wallJumpCooldown += Time.deltaTime;
 
-        // Jika tidak dalam cooldown wall jump
         if (wallJumpCooldown > 0.2f)
         {
-            // Normal movement
+        
             rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
 
-            // Wall sliding (tidak lock sepenuhnya)
             if (onWall() && !isGrounded())
             {
                 rb.gravityScale = 0.3f;
@@ -54,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = 1f;
             }
 
-            if (Input.GetKeyDown(KeyCode.W))  // Gunakan GetKeyDown!
+            if (Input.GetKeyDown(KeyCode.W))  
                 Jump();
         }
     }
@@ -71,11 +74,10 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (onWall() && !isGrounded())
         {
-            // Wall jump dengan kecepatan wajar
+
             float wallJumpDir = -Mathf.Sign(transform.localScale.x);
             rb.velocity = new Vector2(wallJumpDir * speed * 1.5f, jumpForce * 0.8f);
-            
-            // Flip menghadap arah lompat
+
             transform.localScale = new Vector3(-transform.localScale.x, 1, 1);
             
             anim.SetTrigger("jump");

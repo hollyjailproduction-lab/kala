@@ -4,7 +4,6 @@ using TMPro;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] private Health healthSource; 
     [SerializeField] private RectTransform barRect;
     [SerializeField] private RectMask2D mask;
     [SerializeField] private TMP_Text healthIndicator; 
@@ -15,7 +14,7 @@ public class HealthBar : MonoBehaviour
     private void Start()
     { 
         //debug
-        if (healthSource == null || barRect == null || mask == null || healthIndicator == null)
+        if (barRect == null || mask == null || healthIndicator == null)
         {
             Debug.LogError("HealthBar: One or more references are missing!");
             return;
@@ -23,22 +22,40 @@ public class HealthBar : MonoBehaviour
         
         maxRightMask = barRect.rect.width - mask.padding.x - mask.padding.z;
         
-        healthIndicator.text = $"{healthSource.currentHp}/{healthSource.maxHp}";
         
         initialRightMask = mask.padding.z;
     }
 
+    private void Update()
+    {
+        if (GameManager.instance == null) return;
+        
+        int current = GameManager.instance.playerCurrentHealth;
+        int max = GameManager.instance.playerMaxHealth;
+        
+        // Update teks
+        healthIndicator.text = $"{current}/{max}";
+        
+        // Update mask (health bar visual)
+        float targetWidth = current * maxRightMask / max;
+        float newRightMask = maxRightMask + initialRightMask - targetWidth;
+        var padding = mask.padding;
+        padding.z = Mathf.RoundToInt(newRightMask);
+        mask.padding = padding;
+    }
+
     public void SetValue(int newValue)
     {
-        if (healthSource == null) return;
+        if (GameManager.instance == null) return;
         
-        float targetWidth = newValue * maxRightMask / healthSource.maxHp;
+        int max = GameManager.instance.playerMaxHealth;
+        float targetWidth = newValue * maxRightMask / max;
         float newRightMask = maxRightMask + initialRightMask - targetWidth;
         
         var padding = mask.padding;
-        padding.z = newRightMask;
+        padding.z = Mathf.RoundToInt(newRightMask);
         mask.padding = padding;
         
-        healthIndicator.text = $"{newValue}/{healthSource.maxHp}";
+        healthIndicator.text = $"{newValue}/{max}";
     }
 }
