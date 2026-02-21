@@ -2537,6 +2537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  enemyLevel: 1
 --- !u!1 &1336762987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1834037635}
   - component: {fileID: 1834037636}
+  - component: {fileID: 1834037637}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3197,6 +3199,30 @@ MonoBehaviour:
   transitionedFromScene: 
   playerCurrentHealth: 0
   playerMaxHealth: 100
+  remainingDays: 60
+  mapDeathCount: 0
+  frouraRevived: 0
+--- !u!114 &1834037637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834037634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aace65e03be22374ab1dc9fea2de8cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDays: 60
+  daysPerMapTransition: 2
+  maxMapDeaths: 5
+  penaltyLevel1: 1
+  penaltyLevel2: 3
+  penaltyLevel3: 5
+  penaltyLevel4: 7
+  penaltyLevel5: 10
+  penaltyLevel6: 15
 --- !u!1 &1896953916
 GameObject:
   m_ObjectHideFlags: 0
