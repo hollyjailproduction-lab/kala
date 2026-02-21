@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     public int playerCurrentHealth;
     public int playerMaxHealth = 100;
 
+    public int remainingDays = 60;
+    public int mapDeathCount = 0;
+    public bool frouraRevived = false;
+
     public static GameManager instance { get; private set; }
 
     private void Awake()

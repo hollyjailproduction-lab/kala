@@ -6,6 +6,7 @@ public class Melee : MonoBehaviour
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
+    [SerializeField] private int enemyLevel = 1;
 
     [Header("Collider")]
     [SerializeField] private float colliderDistance;
@@ -67,6 +68,6 @@ public class Melee : MonoBehaviour
     private void DamagePlayer()
     {
         if (PlayerInSight())
-            playerHealth.TakeDamage(damage);
+            playerHealth.TakeDamage(damage, DamageSource.Enemy, enemyLevel);
     }
 }

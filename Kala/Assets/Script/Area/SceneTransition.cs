@@ -54,6 +54,9 @@ public class SceneTransition : MonoBehaviour
     {
         if (_other.CompareTag("Player"))
         {
+            if (DaySystem.Instance != null)
+                DaySystem.Instance.OnMapTransition();
+
             GameManager.instance.transitionedFromScene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(transitionTo);
         }
