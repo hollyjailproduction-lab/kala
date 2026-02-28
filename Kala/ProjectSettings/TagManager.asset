@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - Follower
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Wall
   - Player
   - Enemy
-  - 
+  - Froura
   - 
   - 
   - 
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 338373589
+    locked: 0
+  - name: Follower
+    uniqueID: 2707548889
     locked: 0
   - name: Ground
     uniqueID: 1472896105

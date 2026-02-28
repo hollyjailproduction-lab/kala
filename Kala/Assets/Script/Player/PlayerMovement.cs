@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement Instance { get; private set; } 
+    public bool IsMoving { get; private set; } // buat ngecek player sedang gerak ato gk
     private Rigidbody2D rb;
     private Animator anim;
     private CapsuleCollider2D capsuleCollider;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        IsMoving = Mathf.Abs(horizontalInput) > 0.01f;
 
         if (horizontalInput > 0.01f)
             transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
