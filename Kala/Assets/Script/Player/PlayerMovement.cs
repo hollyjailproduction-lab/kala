@@ -29,8 +29,11 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    public bool JumpPressed { get; private set; }
+
     private void Update()
     {
+        JumpPressed = Input.GetKeyDown(KeyCode.W);
         float horizontalInput = Input.GetAxis("Horizontal");
         IsMoving = Mathf.Abs(horizontalInput) > 0.01f;
 
