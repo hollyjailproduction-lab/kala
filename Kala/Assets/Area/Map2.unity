@@ -258,18 +258,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1906de3758af5314188c61eb22a1654d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogs:
-  - Woi
-  - Kau Hitam
-  - 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum. '
-  characterSprites:
+  firsttimeDialogs:
+  - Woi!
+  - Kau HITAM
+  - 'lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque!
+    Adipisci, voluptate. Doloribus, quisquam. Voluptas, doloremque! Adipisci, voluptate.
+    Doloribus, quisquam. Voluptas, doloremque! Adipisci, voluptate. Doloribus, quisquam. '
+  firsttimeSprites:
   - {fileID: 21300000, guid: a419297c60420ab419812e45dcfbf153, type: 3}
   - {fileID: 21300000, guid: 64cf7eb0f4722b449b3b0811a4fe9329, type: 3}
+  - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
+  repeatDialogs:
+  - Napa?
+  - Gak terima?
+  repeatSprites:
+  - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
   - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
   playerIsClose: 0
 --- !u!95 &109640352
