@@ -9,8 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private CapsuleCollider2D capsuleCollider;
     private float wallJumpCooldown;
-    private float horizontalInput;
+    //private float horizontalInput;
     private float originalScaleX;
+    private Vector2 moveInput;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float speed;
@@ -34,23 +35,32 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         JumpPressed = Input.GetKeyDown(KeyCode.W);
-        float horizontalInput = Input.GetAxis("Horizontal");
-        IsMoving = Mathf.Abs(horizontalInput) > 0.01f;
+        float rawHorizontal = Input.GetAxis("Horizontal");
 
-        if (horizontalInput > 0.01f)
+        if (DialogManager.Instance != null && DialogManager.Instance.IsDialogActive)
+        {
+            moveInput = Vector2.zero;
+        }
+        else
+        {
+            moveInput = new Vector2(rawHorizontal, 0);
+        }
+        
+        IsMoving = Mathf.Abs(moveInput.x) > 0.01f;
+
+        if (moveInput.x > 0.01f)
             transform.localScale = new Vector3(originalScaleX, transform.localScale.y, transform.localScale.z);
-        else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3 (-originalScaleX, transform.localScale.y, transform.localScale.z);
-
-        anim.SetBool("grounded", isGrounded());
-        anim.SetBool("run", horizontalInput != 0);
+        else if (moveInput.x < -0.01f)
+            transform.localScale = new Vector3(-originalScaleX, transform.localScale.y, transform.localScale.z);
+                anim.SetBool("grounded", isGrounded());
+                anim.SetBool("run", moveInput.x  != 0);
 
         wallJumpCooldown += Time.deltaTime;
 
         if (wallJumpCooldown > 0.2f)
         {
         
-            rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
+            rb.velocity = new Vector2(moveInput.x  * speed, rb.velocity.y);
 
             if (onWall() && !isGrounded())
             {

@@ -136,9 +136,10 @@ GameObject:
   - component: {fileID: 109640352}
   - component: {fileID: 109640353}
   - component: {fileID: 109640351}
-  m_Layer: 9
+  - component: {fileID: 109640354}
+  m_Layer: 11
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +240,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: -0.011868715, y: -0.28019118}
@@ -257,8 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1906de3758af5314188c61eb22a1654d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 808566773}
-  dialougeText: {fileID: 652859326}
   dialogs:
   - Woi
   - Kau Hitam
@@ -268,7 +267,10 @@ MonoBehaviour:
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum. '
-  wordSpeed: 0
+  characterSprites:
+  - {fileID: 21300000, guid: a419297c60420ab419812e45dcfbf153, type: 3}
+  - {fileID: 21300000, guid: 64cf7eb0f4722b449b3b0811a4fe9329, type: 3}
+  - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
   playerIsClose: 0
 --- !u!95 &109640352
 Animator:
@@ -336,6 +338,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3065889, y: 2.219881}
   m_EdgeRadius: 0
+--- !u!114 &109640354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109640347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500980f388967e64ba84dc3d12192036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 808566773}
+  dialogueText: {fileID: 652859326}
+  characterImage: {fileID: 1986325832}
+  continueButton: {fileID: 719854979}
+  wordSpeed: 0.05
 --- !u!1001 &208726248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2590,10 +2609,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2626,8 +2645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.66236, y: -32.65692}
-  m_SizeDelta: {x: 1497.9509, y: 249.3139}
+  m_AnchoredPosition: {x: 169.9211, y: 5.7712}
+  m_SizeDelta: {x: 1305.4333, y: 172.4562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &719854979
 GameObject:
@@ -2665,8 +2684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 699.3467, y: -126.34567}
+  m_SizeDelta: {x: 246.5868, y: 61.9287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719854981
 MonoBehaviour:
@@ -2711,7 +2730,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719854982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109640354}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: NextLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &719854982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,7 +2840,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2820,7 +2851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Continue
 --- !u!222 &722535783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4707,7 +4738,7 @@ GameObject:
   - component: {fileID: 1986325833}
   - component: {fileID: 1986325832}
   m_Layer: 5
-  m_Name: NPC
+  m_Name: NPCpic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4729,8 +4760,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -765, y: 42}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -669.8986, y: 7.8984}
+  m_SizeDelta: {x: 285.0912, y: 285.0931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986325832
 MonoBehaviour:
