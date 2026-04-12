@@ -19,6 +19,10 @@ namespace Inventory.UI
 
     private bool empty = true;
 
+    //tes
+    public Sprite ItemSprite { get; private set; }
+    public int Quantity { get; private set; }
+    
     public void Awake()
     {
         ResetData();

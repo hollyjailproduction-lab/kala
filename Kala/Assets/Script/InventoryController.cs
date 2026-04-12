@@ -82,17 +82,15 @@ namespace Inventory
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
-                if (inventoryUI == null) return; // tambahkan ini
-
-                if (!inventoryUI.isActiveAndEnabled)
+                if (inventoryUI == null) return;
+                // Gunakan activeSelf saja
+                if (!inventoryUI.gameObject.activeSelf)
                 {
                     inventoryUI.Show();
-                    if (inventoryData != null)
+                    // Refresh data
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
                     {
-                        foreach (var item in inventoryData.GetCurrentInventoryState())
-                        {
-                            inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, item.Value.quantity);
-                        }
+                        inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, item.Value.quantity);
                     }
                 }
                 else

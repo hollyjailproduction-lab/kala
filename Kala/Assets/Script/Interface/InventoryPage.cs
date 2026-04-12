@@ -21,7 +21,7 @@ namespace Inventory.UI
 
         private void Awake()
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             if (mouseFollower != null) mouseFollower.Toggle(false);
             if (itemDescription != null) itemDescription.ResetDescription();
         }
@@ -89,6 +89,7 @@ namespace Inventory.UI
 
         private void HandleBeginDrag(InventoryItem inventoryitemUI)
         {
+            
             int index = items.IndexOf(inventoryitemUI);
             if (index == -1) return;
             currentlyDraggedItemIndex = index;
