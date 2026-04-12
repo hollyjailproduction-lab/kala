@@ -776,10 +776,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 4599520705247804238, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
   contentPanel: {fileID: 1767632673644250424}
   itemDescription: {fileID: 7328217339235503291}
-  image: {fileID: 0}
-  quantity: 0
-  title: 
-  description: 
+  mouseFollower: {fileID: 0}
 --- !u!1 &5310296329455339722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,19 +1607,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 634947682423037434, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 634947682423037434, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 634947682423037434, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44.6678
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 634947682423037434, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -46.7417
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2731045177514825966, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
       propertyPath: m_Pivot.x

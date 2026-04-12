@@ -6,7 +6,9 @@ using System;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHandler , IEndDragHandler, IDropHandler, IDragHandler
+namespace Inventory.UI
+{
+    public class InventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHandler , IEndDragHandler, IDropHandler, IDragHandler
 {
     [SerializeField] private Image itemImage;
     [SerializeField] private TMP_Text quantityTxt;
@@ -79,4 +81,6 @@ public class InventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHand
     {
         OnItemDroppedOn?.Invoke(this);
     }
+}
+
 }
