@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;
+
 public class Health : MonoBehaviour
 {
     public int maxHp = 100;
@@ -7,6 +7,10 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool dead;
     private PlayerMovement playerMovement;
+
+    // Untuk menyimpan info kematian
+    private DamageSource lastDamageSource = DamageSource.Unknown;
+    private int lastEnemyLevel = 0;
 
     private void Start()
     {
@@ -24,7 +28,7 @@ public class Health : MonoBehaviour
             {
                 currentHp = maxHp;
             }
-        }  
+        }
         else
         {
             currentHp = maxHp;
@@ -32,15 +36,19 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
     }
-    
-    public void TakeDamage(int damage)
+
+    // Method TakeDamage dengan parameter lengkap (default untuk kompatibilitas)
+    public void TakeDamage(int damage, DamageSource source = DamageSource.Unknown, int enemyLevel = 0)
     {
         if (dead) return;
 
         currentHp -= damage;
         currentHp = Mathf.Clamp(currentHp, 0, maxHp);
-        
-        
+
+        // Catat sumber damage untuk kematian
+        lastDamageSource = source;
+        lastEnemyLevel = enemyLevel;
+
         if (gameObject.CompareTag("Player") && GameManager.instance != null)
             GameManager.instance.playerCurrentHealth = currentHp;
 
@@ -48,9 +56,8 @@ public class Health : MonoBehaviour
         {
             HealthBar healthBar = FindObjectOfType<HealthBar>();
             if (healthBar != null)
-            healthBar.SetValue(currentHp);
+                healthBar.SetValue(currentHp);
         }
-        
 
         if (currentHp > 0)
         {
@@ -62,20 +69,39 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
 
-                //player
-                if(GetComponent<PlayerMovement>() != null)
+                // Player death handling
+                if (GetComponent<PlayerMovement>() != null)
+                {
                     GetComponent<PlayerMovement>().enabled = false;
 
-                //enemy
-                if(GetComponentInParent<EnemyPatrol>() != null)
+                    // Integrasi dengan DaySystem (jika ada)
+                    if (DaySystem.Instance != null)
+                    {
+                        if (lastDamageSource == DamageSource.Enemy)
+                        {
+                            DaySystem.Instance.OnPlayerDeathByEnemy(lastEnemyLevel);
+                        }
+                        else if (lastDamageSource == DamageSource.Trap)
+                        {
+                            DaySystem.Instance.OnPlayerDeathByTrap();
+                        }
+                        else
+                        {
+                            DaySystem.Instance.OnPlayerDeathByEnemy(1);
+                            Debug.LogWarning("[Health] Player mati dari sumber tidak dikenal, pakai penalty level 1.");
+                        }
+                    }
+                }
+
+                // Enemy death handling (jika musuh mati)
+                if (GetComponentInParent<EnemyPatrol>() != null)
                     GetComponentInParent<EnemyPatrol>().enabled = false;
 
-                if(GetComponentInParent<Melee>() != null)
+                if (GetComponentInParent<Melee>() != null)
                     GetComponentInParent<Melee>().enabled = false;
+
                 dead = true;
-
             }
-
         }
     }
 }
