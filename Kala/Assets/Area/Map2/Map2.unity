@@ -2745,6 +2745,9 @@ MonoBehaviour:
   transitionedFromScene: 
   playerCurrentHealth: 0
   playerMaxHealth: 100
+  remainingDays: 60
+  mapDeathCount: 0
+  frouraRevived: 0
 --- !u!4 &462341933
 Transform:
   m_ObjectHideFlags: 0
@@ -3756,6 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  enemyLevel: 1
 --- !u!95 &946161728
 Animator:
   serializedVersion: 5
@@ -4302,7 +4306,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1351055009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b71005ddf3f87498d82d907975b942, type: 3}
+  m_Script: {fileID: 11500000, guid: a2847d5f85c1c5e4da627e208d5346ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
