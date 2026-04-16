@@ -14,14 +14,33 @@ namespace  Inventory.Model
         [field: SerializeField] public int Size { get; private set; } = 10;
 
         public event Action<Dictionary<int, InventoryItemData>> OnInventoryUpdated;
+
+        private bool isInitialized = false;
         public void Initialize()
         {
+            if (isInitialized) return;
+            
             inventoryItems = new List<InventoryItemData>();
             for (int i = 0; i < Size; i++)
             {
                 inventoryItems.Add(InventoryItemData.GetEmptyItem());
             }
 
+        }
+
+        public void RemoveItemAt(int itemIndex, int amount)
+        {
+            if (inventoryItems.Count > itemIndex)
+            {
+                if (inventoryItems[itemIndex].IsEmpty) return;
+                int reminder = inventoryItems[itemIndex].quantity - amount;
+                if (reminder <= 0)
+                inventoryItems[itemIndex] = InventoryItemData.GetEmptyItem();
+                else
+                inventoryItems[itemIndex] = inventoryItems[itemIndex].ChangeQuantity(reminder);
+
+                InformAboutChange();
+            }
         }
 
         public int AddItem(ItemSO item, int quantity)

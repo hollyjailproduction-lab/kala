@@ -45,8 +45,11 @@ namespace Inventory.UI
         {
             foreach (var item in items)
             {
-                item.ResetData();
-                item.Deselect();
+                if (item != null)
+                {
+                    item.ResetData();
+                    item.Deselect();
+                }
             }
         }
 
@@ -106,7 +109,12 @@ namespace Inventory.UI
             }
         }
 
-        private void HandleShowItemActions(InventoryItem inventoryitemUI) { }
+        private void HandleShowItemActions(InventoryItem inventoryitemUI)
+        {
+            int index = items.IndexOf(inventoryitemUI);
+            if (index == -1) return;
+            OnItemActionRequested?.Invoke(index);
+        }
 
         public void Show()
         {

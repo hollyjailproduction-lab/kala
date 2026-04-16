@@ -25,6 +25,9 @@ namespace Inventory.UI
     
     public void Awake()
     {
+        if (itemImage == null) itemImage = GetComponent<Image>();
+        if (quantityTxt == null) quantityTxt = GetComponentInChildren<TMP_Text>();
+        if (borderImage == null) borderImage = GetComponent<Image>();
         ResetData();
         Deselect();
     }

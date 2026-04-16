@@ -21,17 +21,21 @@ namespace Inventory
 
         private void PrepareInventoryData()
         {
+            if (inventoryData.GetCurrentInventoryState().Count == 0)
+        {
             inventoryData.Initialize();
-            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
             foreach (InventoryItemData item in initialItems)
             {
                 if (item.IsEmpty) continue;
                 inventoryData.AddItem(item);
             }
         }
+        inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+        }
 
         private void UpdateInventoryUI(Dictionary<int, InventoryItemData> InventoryState)
         {
+            if (inventoryUI == null) return;
             inventoryUI.ResetAllItems();
             foreach (var item in InventoryState)
             {
@@ -50,7 +54,18 @@ namespace Inventory
 
         private void HandleItemActionRequest(int itemIndex)
         {
-            
+            InventoryItemData inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty) return;
+            IItemAction itemAction = inventoryItem.item as IItemAction;
+            if (itemAction != null)
+            {
+                itemAction.PerformAction(gameObject);
+            }
+            IDestroyableItem destroyableItem = inventoryItem.item as IDestroyableItem;
+            if (destroyableItem != null)
+            {
+                inventoryData.RemoveItemAt(itemIndex, 1);
+            }
         }
 
         private void HandleDragging(int itemIndex)

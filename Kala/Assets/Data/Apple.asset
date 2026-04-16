@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a9504ae8c4548e4dbf664625f70ac40, type: 3}
+  m_Script: {fileID: 11500000, guid: a6bf0ee0c6b715a419f8ac012201d88f, type: 3}
   m_Name: Apple
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 1
@@ -17,3 +17,6 @@ MonoBehaviour:
   <Name>k__BackingField: Apple
   <Description>k__BackingField: Panganan
   <ItemImage>k__BackingField: {fileID: 1701674813, guid: abba9fe1bdfb3e24fbee55a6926f3a9a, type: 3}
+  modifiersData:
+  - statModifier: {fileID: 11400000, guid: 64a1b3294762fd64ca424c4ea6e4269d, type: 2}
+    value: 1

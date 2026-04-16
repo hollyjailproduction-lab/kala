@@ -104,4 +104,22 @@ public class Health : MonoBehaviour
             }
         }
     }
+
+    public void AddHealth(int amount)
+    {
+        if (dead) return;
+
+        currentHp += amount;
+        currentHp = Mathf.Clamp(currentHp, 0, maxHp);
+
+        if (gameObject.CompareTag("Player") && GameManager.instance != null)
+            GameManager.instance.playerCurrentHealth = currentHp;
+
+        if (gameObject.CompareTag("Player"))
+        {
+            HealthBar healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar != null)
+                healthBar.SetValue(currentHp);
+        }
+    }
 }
