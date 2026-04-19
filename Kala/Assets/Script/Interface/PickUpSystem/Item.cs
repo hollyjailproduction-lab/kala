@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using Inventory.Model;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public ItemSO ItemData { get; private set; }
     [field: SerializeField] public int Quantity { get; set; } = 1;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private float duration = 0.3f;
 
+    public bool isOpened { get;private  set;}
+    public string ID { get; private set; }
+
     private void Start()
     {
+        ID ??= GlobalHelper.GenerateUniqueID(gameObject);
         GetComponent<SpriteRenderer>().sprite = ItemData.ItemImage;
     }
 
@@ -34,5 +38,16 @@ public class Item : MonoBehaviour
             yield return null;
         }
         Destroy(gameObject);
+    }
+
+    public bool Caninteract()
+    {
+        return !isOpened;
+    }
+
+    public void Interact()
+    {
+        if (!Caninteract())
+            return;
     }
 }
