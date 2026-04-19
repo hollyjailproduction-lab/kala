@@ -16,7 +16,10 @@ MonoBehaviour:
   npcPortrait: {fileID: 21300000, guid: a419297c60420ab419812e45dcfbf153, type: 3}
   dialogueLines:
   - Hallo anak kicik
-  - Selamat berpetualang
+  - lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
+    ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
+    ipsum dolor sit amet
+  - Selamat berpetualang!!
   typingSpeed: 0.05
   autoProgressLines: 0100
   autoProgressDelay: 3

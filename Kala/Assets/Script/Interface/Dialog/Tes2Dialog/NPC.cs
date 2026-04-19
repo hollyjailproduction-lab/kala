@@ -79,11 +79,13 @@ public class NPC : MonoBehaviour, IInteractable
 
         isTyping = false;
 
+        /*
         if(dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
         {
             yield return new WaitForSeconds(dialogueData.autoProgressDelay);
             NextLine();
         }
+        */
     }
 
     public void EndDialogue()
@@ -94,4 +96,6 @@ public class NPC : MonoBehaviour, IInteractable
         dialoguePanel.SetActive(false);
         PauseController.SetPause(false);
     }
+
+    
 }
