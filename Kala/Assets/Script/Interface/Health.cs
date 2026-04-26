@@ -69,11 +69,16 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
 
+
                 // Player death handling
                 if (GetComponent<PlayerMovement>() != null)
                 {
                     GetComponent<PlayerMovement>().enabled = false;
-
+            
+                    if (gameObject.CompareTag("Player") && GameManager.instance != null)
+                    {
+                        GameManager.instance.die();  // ← panggil method Die() di GameManager
+                    }
                     // Integrasi dengan DaySystem (jika ada)
                     if (DaySystem.Instance != null)
                     {
@@ -120,6 +125,28 @@ public class Health : MonoBehaviour
             HealthBar healthBar = FindObjectOfType<HealthBar>();
             if (healthBar != null)
                 healthBar.SetValue(currentHp);
+        }
+    }
+    
+    public void Revive()
+    {
+        if (!dead) return; // Hanya perlu jika mati
+        
+        dead = false;
+        currentHp = maxHp;
+        
+        if (gameObject.CompareTag("Player") && GameManager.instance != null)
+            GameManager.instance.playerCurrentHealth = currentHp;
+        
+        // Aktifkan komponen gerak
+        PlayerMovement pm = GetComponent<PlayerMovement>();
+        if (pm != null) pm.enabled = true;
+        
+        // Update health bar
+        if (gameObject.CompareTag("Player"))
+        {
+            HealthBar healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar != null) healthBar.SetValue(currentHp);
         }
     }
 }
