@@ -588,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &124535938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1567,6 +1567,56 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 880142614}
   m_SourcePrefab: {fileID: 100100000, guid: ba12cf06793105e4b9f70d2a9954062d, type: 3}
+--- !u!1 &664670152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664670153}
+  - component: {fileID: 664670154}
+  m_Layer: 0
+  m_Name: DialogueController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &664670153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664670152}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674814052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &664670154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664670152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bda6c903365b5d41ae9e737a3eac8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 124535937}
+  dialogueText: {fileID: 756706068}
+  NPCName: {fileID: 2141090526}
+  NPCPic: {fileID: 18348364}
+  choiceContainer: {fileID: 1841820214}
+  choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
 --- !u!1 &704093524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,6 +3578,38 @@ MonoBehaviour:
   speed: 0.5
   idleDuration: 1
   anim: {fileID: 253532714}
+--- !u!1 &1674814051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674814052}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674814052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674814051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5523508, y: 0.88613296, z: 0.0010059917}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 664670153}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687754359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,10 +4006,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 8730550864437544981311841a96dc5c, type: 2}
-  dialoguePanel: {fileID: 124535937}
-  dialogueText: {fileID: 756706068}
-  nameText: {fileID: 2141090526}
-  portraitImage: {fileID: 18348364}
 --- !u!1001 &1772603827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4345,6 +4423,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7591485240535382857, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: maxHp
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4484,7 +4566,7 @@ GameObject:
   - component: {fileID: 1841820216}
   - component: {fileID: 1841820215}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ChoicePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5834,6 +5916,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1499380020}
   - {fileID: 1373065038}
+  - {fileID: 516341619}
   - {fileID: 855936157}
   - {fileID: 1982447015}
   - {fileID: 1172986353}
@@ -5842,6 +5925,6 @@ SceneRoots:
   - {fileID: 2123620045}
   - {fileID: 871697051}
   - {fileID: 1834037635}
-  - {fileID: 516341619}
   - {fileID: 1695330751}
   - {fileID: 1818014699}
+  - {fileID: 1674814052}

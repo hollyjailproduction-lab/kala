@@ -16,10 +16,15 @@ MonoBehaviour:
   npcPortrait: {fileID: 21300000, guid: a419297c60420ab419812e45dcfbf153, type: 3}
   dialogueLines:
   - Hallo anak kicik
-  - lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
-    ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem
-    ipsum dolor sit amet
+  - apakah kamu adalah trapeler dari negeri yang jaoh?
+  - Wow keren
   - Selamat berpetualang!!
+  - biasa ae -//-
   typingSpeed: 0.05
-  autoProgressLines: 0100
-  autoProgressDelay: 3
+  endDialogueLines: 0000000101
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Yas
+    - Kagak bjir
+    nextDialogueIndex: 0200000004000000
