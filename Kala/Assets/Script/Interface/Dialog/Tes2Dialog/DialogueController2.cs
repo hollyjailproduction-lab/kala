@@ -30,6 +30,7 @@ public class DialogueController2 : MonoBehaviour
     public Image NPCPic;
     public Transform choiceContainer;
     public GameObject choiceButtonPrefab;
+    public bool IsDialogueActive { get; private set; } = false;
 
     void Awake()
     {
@@ -48,6 +49,12 @@ public class DialogueController2 : MonoBehaviour
     {
         if (dialoguePanel != null)
             dialoguePanel.SetActive(show);
+        
+        IsDialogueActive = show;
+        if (!show)
+        { 
+            ClearChoices();
+        }
     }
 
     public void SetNPCInfo(string npcName, Sprite portrait)

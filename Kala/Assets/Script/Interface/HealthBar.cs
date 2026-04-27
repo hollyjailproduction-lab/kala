@@ -10,6 +10,7 @@ public class HealthBar : MonoBehaviour
     
     private float maxRightMask;
     private float initialRightMask;
+    public Slider slider;
 
     private void Start()
     { 
@@ -57,5 +58,11 @@ public class HealthBar : MonoBehaviour
         mask.padding = padding;
         
         healthIndicator.text = $"{newValue}/{max}";
+    }
+
+    public void SetMaxValue(int max)
+    {
+        if (slider != null)
+            slider.maxValue = max;
     }
 }

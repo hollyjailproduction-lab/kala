@@ -62,28 +62,40 @@ public class GameManager : MonoBehaviour
         {
             playerRb = player.GetComponent<Rigidbody2D>();
             playerTransform = player.transform;
-
-            // Set checkpoint ke posisi player saat ini (sudah diatur oleh SceneTransition)
             checkpointPos = playerTransform.position;
 
-            // Sinkronkan health
             Health playerHealth = player.GetComponent<Health>();
             if (playerHealth != null)
             {
+                // 1. Terapkan maxHp dari GameManager ke player
+                playerHealth.maxHp = playerMaxHealth;
+                // 2. Atur currentHp (pastikan tidak melebihi max)
+                if (playerCurrentHealth > 0)
+                    playerHealth.currentHp = Mathf.Min(playerCurrentHealth, playerMaxHealth);
+                else
+                    playerHealth.currentHp = playerMaxHealth;
+
+                playerHealth.Revive(); // jika mati, hidupkan kembali
+
+                // 3. Sinkronkan kembali ke GameManager (nilai aktual)
                 playerCurrentHealth = playerHealth.currentHp;
                 playerMaxHealth = playerHealth.maxHp;
-
-                // Pastikan player dalam keadaan hidup (jika sebelumnya dead karena data lama)
-                playerHealth.Revive();
             }
 
-            // Aktifkan kembali PlayerMovement (jika mati dari scene sebelumnya)
+            // Aktifkan komponen gerak player (jika mati sebelumnya)
             PlayerMovement pm = player.GetComponent<PlayerMovement>();
             if (pm != null && !pm.enabled) pm.enabled = true;
 
-            Debug.Log($"Player reference refreshed in scene: {SceneManager.GetActiveScene().name}");
+            // Update UI health bar
+            HealthBar healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar != null)
+            {
+                healthBar.SetMaxValue(playerMaxHealth);
+                healthBar.SetValue(playerCurrentHealth);
+            }
+
+            Debug.Log($"Player revived at scene {SceneManager.GetActiveScene().name} with HP: {playerCurrentHealth}/{playerMaxHealth}");
         }
-        
     }
 
     public void UpdateCheckPoint(Vector2 pos)

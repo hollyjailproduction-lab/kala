@@ -55,6 +55,12 @@ public class PlayerMovement : MonoBehaviour
             jumpPressed = false;
         }
 
+        //ini buat yang tes2
+        if (DialogueController2.Instance != null && DialogueController2.Instance.IsDialogueActive)
+        {
+            return;
+        }
+
         // Update IsMoving berdasarkan input movement
         IsMoving = Mathf.Abs(moveInput.x) > 0.01f;
 

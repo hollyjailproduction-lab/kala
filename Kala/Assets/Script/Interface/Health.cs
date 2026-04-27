@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public int playerMaxHealth = 100;
     public int maxHp = 100;
     public int currentHp;
     private Animator anim;
@@ -147,6 +148,30 @@ public class Health : MonoBehaviour
         {
             HealthBar healthBar = FindObjectOfType<HealthBar>();
             if (healthBar != null) healthBar.SetValue(currentHp);
+        }
+    }
+
+    public void AddMaxHealth(int amount)
+    {
+        if (dead) return;
+
+        maxHp += amount;
+        currentHp += amount;  // Optional: menambah current juga, biar langsung terisi
+
+        if (gameObject.CompareTag("Player") && GameManager.instance != null)
+        {
+            GameManager.instance.playerCurrentHealth = currentHp;
+            GameManager.instance.playerMaxHealth = maxHp;  // Perlu tambahkan field di GameManager
+        }
+
+        if (gameObject.CompareTag("Player"))
+        {
+            HealthBar healthBar = FindObjectOfType<HealthBar>();
+            if (healthBar != null)
+            {
+                healthBar.SetMaxValue(maxHp);  // Perlu method untuk update max di health bar
+                healthBar.SetValue(currentHp);
+            }
         }
     }
 }

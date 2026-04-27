@@ -1,0 +1,1434 @@
+fileFormatVersion: 2
+guid: da895f7b431518c4abfe93e195406b68
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: berubah_0
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3220
+        width: 280
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce8d7b33f988a4b921380b7f1195d6
+      internalID: -739525284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_1
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 3220
+        width: 278
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6eec9a0b5adb8645bd8eb9f7bbe3c99
+      internalID: 1764442907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_2
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 3220
+        width: 293
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ab68b3c0a0711408e66519b396b73d
+      internalID: 816939012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_3
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3452
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df60d892f31a0b949b27a4f9b3926841
+      internalID: -1456070640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_4
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 3220
+        width: 274
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11381bbff6669064e858bd9ab60d8e65
+      internalID: 1355399007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_5
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 3452
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e5574e703cc69449aaf4fd96a88335
+      internalID: -158567925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_6
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 3220
+        width: 294
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5774360d95f0dc449c9103f314e8b9a
+      internalID: -679224932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_7
+      rect:
+        serializedVersion: 2
+        x: 2937
+        y: 3452
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0aec03b19274b419c91a5ff445b143
+      internalID: -1531797011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_8
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 3220
+        width: 292
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18718a3087d942e43960a89f28eac075
+      internalID: -1283790344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_9
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 3452
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facd6661a3a5ae240ab2e540ecc741c9
+      internalID: -1741400273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_10
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 3238
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa660b23e9ab00647b59b60a50d606b9
+      internalID: 507232250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_11
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 3238
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7cb86687854f9409e81a4f6335c9d1
+      internalID: 1560851546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2820
+        width: 287
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a398f4880bdc4074686a5cc6bca2815b
+      internalID: 565685991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2820
+        width: 271
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072a74e1a46168c48975d7ebd0538f0f
+      internalID: 795728175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_14
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2820
+        width: 253
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4baa44c21836745936a5c033e46130
+      internalID: 1879120011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_15
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2820
+        width: 250
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e113c47442949248877f4cfae249b64
+      internalID: -1349500792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_16
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2820
+        width: 255
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4283b5735706f4b9dc7e275596498b
+      internalID: -1945357852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_17
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2820
+        width: 262
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1ab9af11b6c9f4ba63c6b47274d8c6
+      internalID: -723453298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_18
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2421
+        width: 266
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ab8706bbb13ed40a5fa46177ef410f
+      internalID: 310975193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_19
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 2421
+        width: 254
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d556b993bf0b014b8dc6bc62c4e0c16
+      internalID: -1763893509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_20
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2421
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696fa004421fa2342bfbbde30a1135cb
+      internalID: -1962238880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_21
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2421
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae16c3991b0a494d894bae1cd234e1f
+      internalID: -891933674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_22
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2421
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7940ec2cacbb164d95a39b54287ea00
+      internalID: 1700839805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_23
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2421
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df12d3cceb60e848805575175ba5f0e
+      internalID: 1349448269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_24
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2020
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fb7c8495942ee41a70e60fdd2b2437
+      internalID: 1238864553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_25
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2020
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12205a59b6eb768448e2c88847d4dada
+      internalID: 222844406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_26
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 2020
+        width: 232
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186c18ed9d421de4483969d58d11675a
+      internalID: -585178728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_27
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2020
+        width: 245
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594cb0d8cb2788041b5d74275b4b8f98
+      internalID: -193703891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_28
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 2241
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bfd35234a45024686bfcd830216aab
+      internalID: -1975550514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_29
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2020
+        width: 245
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40331532c15be74f91e1987f1a75cf8
+      internalID: 1105093429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_30
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2020
+        width: 244
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20819957159266848b950a04ac8fd247
+      internalID: -1586912575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_31
+      rect:
+        serializedVersion: 2
+        x: 3445
+        y: 2241
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e2a6a9d9a710242bf4bd8d7e1b8a52
+      internalID: 1301876676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_32
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1621
+        width: 232
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165b1be7b5298a342931d48179fd44c5
+      internalID: -219033429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1854
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5513458d206925429553716d76678be
+      internalID: -1280699879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_34
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1621
+        width: 239
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ea1a463ce2ef04e9c0d0bfe49e4546
+      internalID: -291561454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_35
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1854
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ca85c662a4e494cba36d37da1ce8dc
+      internalID: 1261231829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_36
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1621
+        width: 232
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2662c104d63485478b24c2bc980b606
+      internalID: 1087742495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_37
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1621
+        width: 232
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a1d9bfc2ba4874daefe380f45b23db
+      internalID: -1545881351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_38
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 1621
+        width: 232
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4453e2d667e4e4a408312528b18a62b3
+      internalID: 196811465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_39
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1621
+        width: 251
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c9404a57925cb4db6faddfa2926541
+      internalID: -983068548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_40
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1840
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a61d9431661154e8da85102e78e99c
+      internalID: -528461775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_41
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1220
+        width: 252
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2610fee7db2b654997e2b86d6817f9e
+      internalID: 1458696937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_42
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1220
+        width: 250
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e11bea00424e54f99e6fa15433ee2f
+      internalID: 745176343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_43
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1220
+        width: 251
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93f4fbb63c3e8c4d829c354e963d81a
+      internalID: 2003041293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_44
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1220
+        width: 253
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9092ac85cdcc04f459bd853abdff65dd
+      internalID: -1003599397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_45
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 1220
+        width: 252
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2475dfc3ab31664459030bc47fa2b2cb
+      internalID: -1220831738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_46
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1220
+        width: 253
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ef732c5ecdbab45ba580930a575ca0
+      internalID: 1003981287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 819
+        width: 253
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbb6a2d4c32638418ec43ff14a18d10
+      internalID: 47940977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_48
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 819
+        width: 252
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b6662e04d99f545b07eeebfed84b3a
+      internalID: -1818806857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_49
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 819
+        width: 253
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4e167471503654bae44268726b6bbb
+      internalID: -1262963689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_50
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 819
+        width: 253
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5086124f961474d4488212498c6ce619
+      internalID: 1139456596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_51
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 819
+        width: 252
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5799017a4e2213a4289a87fdebcc379e
+      internalID: -128111287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_52
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 819
+        width: 253
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae11b589765a314e99f0c9eda271580
+      internalID: 1266539754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_53
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 420
+        width: 253
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeed68b5a110b1842b88a28670fdf798
+      internalID: -795549615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_54
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 420
+        width: 252
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6dcc20fc56fc447949f3fcc32f8fd4
+      internalID: -1160458263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_55
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 420
+        width: 253
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a46eefba6ccd6e4689dd2b99d16212e
+      internalID: -1935669972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_56
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 420
+        width: 253
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8587049286357614f8aa15b89ad025cb
+      internalID: -1629906438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_57
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 420
+        width: 252
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f4fe3148e0ffc4fa8274d179d6e4da
+      internalID: 1004530717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_58
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 420
+        width: 253
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cd6b74bbf0b57458097275e181e5bb
+      internalID: -1344800902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: berubah_59
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 19
+        width: 255
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d170ed552bc77469104f8cc4191e39
+      internalID: 746912371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      berubah_0: -739525284
+      berubah_1: 1764442907
+      berubah_10: 507232250
+      berubah_11: 1560851546
+      berubah_12: 565685991
+      berubah_13: 795728175
+      berubah_14: 1879120011
+      berubah_15: -1349500792
+      berubah_16: -1945357852
+      berubah_17: -723453298
+      berubah_18: 310975193
+      berubah_19: -1763893509
+      berubah_2: 816939012
+      berubah_20: -1962238880
+      berubah_21: -891933674
+      berubah_22: 1700839805
+      berubah_23: 1349448269
+      berubah_24: 1238864553
+      berubah_25: 222844406
+      berubah_26: -585178728
+      berubah_27: -193703891
+      berubah_28: -1975550514
+      berubah_29: 1105093429
+      berubah_3: -1456070640
+      berubah_30: -1586912575
+      berubah_31: 1301876676
+      berubah_32: -219033429
+      berubah_33: -1280699879
+      berubah_34: -291561454
+      berubah_35: 1261231829
+      berubah_36: 1087742495
+      berubah_37: -1545881351
+      berubah_38: 196811465
+      berubah_39: -983068548
+      berubah_4: 1355399007
+      berubah_40: -528461775
+      berubah_41: 1458696937
+      berubah_42: 745176343
+      berubah_43: 2003041293
+      berubah_44: -1003599397
+      berubah_45: -1220831738
+      berubah_46: 1003981287
+      berubah_47: 47940977
+      berubah_48: -1818806857
+      berubah_49: -1262963689
+      berubah_5: -158567925
+      berubah_50: 1139456596
+      berubah_51: -128111287
+      berubah_52: 1266539754
+      berubah_53: -795549615
+      berubah_54: -1160458263
+      berubah_55: -1935669972
+      berubah_56: -1629906438
+      berubah_57: 1004530717
+      berubah_58: -1344800902
+      berubah_59: 746912371
+      berubah_6: -679224932
+      berubah_7: -1531797011
+      berubah_8: -1283790344
+      berubah_9: -1741400273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
