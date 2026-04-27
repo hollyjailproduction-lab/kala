@@ -110,34 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack 1 fase 1_0
+      name: bos Attack 1 fase 1_0
       rect:
         serializedVersion: 2
-        x: 146
-        y: 2820
-        width: 346
-        height: 283
-      alignment: 9
-      pivot: {x: 0.39306358, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd2ac83824c3e415784a4e81d216740b
-      internalID: -1493935504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_1
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 2838
-        width: 13
-        height: 5
+        x: 0
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8399c4c24dc4a43b68b881aecb85d667
-      internalID: 1234501358
+      spriteID: cb6d0bdf3495eec439e1b808e029808e
+      internalID: 660228190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_2
+      name: bos Attack 1 fase 1_1
       rect:
         serializedVersion: 2
-        x: 810
-        y: 2820
-        width: 278
-        height: 283
-      alignment: 9
-      pivot: {x: 0.25899282, y: 0.49116609}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88373247ffc9b41ea9679317da9bd773
-      internalID: 1707752528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_3
-      rect:
-        serializedVersion: 2
-        x: 1090
-        y: 2838
-        width: 12
-        height: 5
+        x: 600
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,62 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0102a4f1f9f92425588a04a414507dc0
-      internalID: -1050523889
+      spriteID: 204a139783f40354b8bc8712aee228cc
+      internalID: 27093015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_4
+      name: bos Attack 1 fase 1_2
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 2820
-        width: 293
-        height: 283
-      alignment: 9
-      pivot: {x: 0.2423208, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3bea3ada7fc84a099de94a823d18f8e
-      internalID: 1757147663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_5
-      rect:
-        serializedVersion: 2
-        x: 2009
-        y: 2818
-        width: 285
-        height: 283
-      alignment: 9
-      pivot: {x: 0.24210528, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb73fe022dcc74b66bfd7fdcdc8db9ef
-      internalID: -831656386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_6
-      rect:
-        serializedVersion: 2
-        x: 2289
-        y: 2840
-        width: 7
-        height: 5
+        x: 1200
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,146 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ce753ef7269e4aa0a8a536fed238304
-      internalID: -717642492
+      spriteID: 14b562e5d583a574b8c2d6b60bfac65e
+      internalID: -1369558481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_7
+      name: bos Attack 1 fase 1_3
       rect:
         serializedVersion: 2
-        x: 2610
-        y: 2820
-        width: 336
-        height: 283
-      alignment: 9
-      pivot: {x: 0.20535715, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95f3ffbd8cd18402ebffff14b1c8f61b
-      internalID: -1760113424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_8
-      rect:
-        serializedVersion: 2
-        x: 3212
-        y: 2822
-        width: 349
-        height: 292
-      alignment: 9
-      pivot: {x: 0.18911175, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7681caf3383a749869233d35fa06340b
-      internalID: -695566247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_9
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 2418
-        width: 304
-        height: 295
-      alignment: 9
-      pivot: {x: 0.24342105, y: 0.4915254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df229df4c23d74bdba2721bf537159eb
-      internalID: -1826970329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_10
-      rect:
-        serializedVersion: 2
-        x: 810
-        y: 2419
-        width: 259
-        height: 312
-      alignment: 9
-      pivot: {x: 0.28571427, y: 0.45512822}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1e681e2fbdd0405192b87668513058d
-      internalID: 1535503420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_11
-      rect:
-        serializedVersion: 2
-        x: 1410
-        y: 2419
-        width: 197
-        height: 345
-      alignment: 9
-      pivot: {x: 0.3654822, y: 0.4115942}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66311393dcae744bc811da577ffeb212
-      internalID: -1659543944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_12
-      rect:
-        serializedVersion: 2
-        x: 2014
-        y: 2421
-        width: 271
-        height: 311
-      alignment: 9
-      pivot: {x: 0.2583026, y: 0.44051448}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2983a984098c2429a82aea5ae03fd9b6
-      internalID: -1725429034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_13
-      rect:
-        serializedVersion: 2
-        x: 2573
-        y: 2421
-        width: 217
-        height: 281
+        x: 1800
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,104 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e123fb1b7a6684ceb94b3e6099fc4174
-      internalID: -1143812953
+      spriteID: 27becf809b0ffdc44b4e0a139a52623d
+      internalID: -486082386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_14
+      name: bos Attack 1 fase 1_4
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 2423
-        width: 267
-        height: 272
-      alignment: 9
-      pivot: {x: 0.5692884, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bcd01331d40d4f9188541988fbf99ee
-      internalID: -1325512299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_15
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 2024
-        width: 278
-        height: 272
-      alignment: 9
-      pivot: {x: 0.5827338, y: 0.53308827}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8c33336935bd49f481ac16758ca5e0d
-      internalID: 968428023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_16
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 2022
-        width: 272
-        height: 271
-      alignment: 9
-      pivot: {x: 0.5919118, y: 0.5166052}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e546243a66e44d1f90e2e0ece185222
-      internalID: 1425145202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_17
-      rect:
-        serializedVersion: 2
-        x: 1303
-        y: 2022
-        width: 298
-        height: 273
-      alignment: 9
-      pivot: {x: 0.60402685, y: 0.4981685}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c529c8fd84f844a97a4a9a306ff38e7b
-      internalID: 1105316065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_18
-      rect:
-        serializedVersion: 2
-        x: 1756
-        y: 2164
-        width: 5
-        height: 6
+        x: 2400
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,41 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29122554bbcf54bd3a67b353a4df3283
-      internalID: -1282944276
+      spriteID: a3479d0f92984bc49b1cf63d55cb923f
+      internalID: 1255785659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_19
+      name: bos Attack 1 fase 1_5
       rect:
         serializedVersion: 2
-        x: 1907
-        y: 2024
-        width: 283
-        height: 271
-      alignment: 9
-      pivot: {x: 0.60777384, y: 0.501845}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63c82fd0628d64e3d906b4daa9fd4466
-      internalID: -1852913413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_20
-      rect:
-        serializedVersion: 2
-        x: 2329
-        y: 2164
-        width: 4
-        height: 4
+        x: 3000
+        y: 2800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,62 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac82bc1fa85a46448bf10c424845271
-      internalID: -922506144
+      spriteID: 96e887a58841bb5418890532f5116c8a
+      internalID: -2103570425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_21
+      name: bos Attack 1 fase 1_6
       rect:
         serializedVersion: 2
-        x: 2484
-        y: 2020
-        width: 302
-        height: 283
-      alignment: 9
-      pivot: {x: 0.6490066, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aecdb2cef74a2435bb56f0c840f6f489
-      internalID: -350549026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_22
-      rect:
-        serializedVersion: 2
-        x: 3060
-        y: 2020
-        width: 326
-        height: 283
-      alignment: 9
-      pivot: {x: 0.6809816, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6e2442de2118444782eeb719448bb57
-      internalID: 668557142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_23
-      rect:
-        serializedVersion: 2
-        x: 1886
-        y: 2040
-        width: 12
-        height: 10
+        x: 0
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ae6bd6673f34beab336c5977cb0eaa
-      internalID: -2088577285
+      spriteID: f0a89dc2c4dd5e647b062bfcc55f3363
+      internalID: 914922552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_24
+      name: bos Attack 1 fase 1_7
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1619
-        width: 348
-        height: 283
+        x: 600
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be6819d0abd734c4d91f2bf0c5dabb76
-      internalID: -636261120
+      spriteID: ae65f25f425318e40bac6285faca0b40
+      internalID: 1296570377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_25
+      name: bos Attack 1 fase 1_8
       rect:
         serializedVersion: 2
-        x: 638
-        y: 1619
-        width: 454
-        height: 283
+        x: 1200
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 748b29a700f284f82bd9ead22717b059
-      internalID: 103924091
+      spriteID: 17e4ed6e7a4a6684e85d37319ca60f93
+      internalID: 1971457637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_26
+      name: bos Attack 1 fase 1_9
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 1637
-        width: 14
-        height: 18
+        x: 1800
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,41 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e107358b1123d4c2390be3708c561f37
-      internalID: -470933872
+      spriteID: d996856a08dda114fa2870f42da14c61
+      internalID: -1548899888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_27
+      name: bos Attack 1 fase 1_10
       rect:
         serializedVersion: 2
-        x: 1246
-        y: 1619
-        width: 340
-        height: 283
-      alignment: 9
-      pivot: {x: 0.6911765, y: 0.5017668}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f49eb902ab1004edfb917166eba2a771
-      internalID: 1606719404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack 1 fase 1_28
-      rect:
-        serializedVersion: 2
-        x: 1839
-        y: 1621
-        width: 348
-        height: 283
+        x: 2400
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33d330dc13ecc4f80ba43f72bf169474
-      internalID: -1208554947
+      spriteID: a370449c177102e48ad272f8676ca245
+      internalID: 478238389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_29
+      name: bos Attack 1 fase 1_11
       rect:
         serializedVersion: 2
-        x: 2438
-        y: 1637
-        width: 14
-        height: 18
+        x: 3000
+        y: 2400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396542547b9ff44c4ab17d05493e64bf
-      internalID: 634937856
+      spriteID: 105fe52b859c83944932d064bf620ab5
+      internalID: 2041066874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_30
+      name: bos Attack 1 fase 1_12
       rect:
         serializedVersion: 2
-        x: 2447
-        y: 1619
-        width: 339
-        height: 283
+        x: 0
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5677b64f437bc441ca5323a295b31b99
-      internalID: -551353280
+      spriteID: 15c7c5fb4cc53b34493900dcac2b8b2d
+      internalID: 281541143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_31
+      name: bos Attack 1 fase 1_13
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 1619
-        width: 517
-        height: 283
+        x: 600
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9ddd7f2b7808452f8b8e80ba22f6211
-      internalID: 806961717
+      spriteID: 286c9a444336468439472960aeab7d35
+      internalID: -1766926613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_32
+      name: bos Attack 1 fase 1_14
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1220
-        width: 348
-        height: 283
+        x: 1200
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ebfb54a3b6645b7b0043bd89c486d0
-      internalID: 1358399079
+      spriteID: 82f8a02e236ac014aa56e6a0ca62ed0c
+      internalID: 863478740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_33
+      name: bos Attack 1 fase 1_15
       rect:
         serializedVersion: 2
-        x: 661
-        y: 1220
-        width: 429
-        height: 283
+        x: 1800
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,20 +439,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f872254874f8e4b3bb60d3de6970e2dc
-      internalID: -1799613483
+      spriteID: fae8ad9d496504c44825f14bbcaa79dd
+      internalID: -711812344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_34
+      name: bos Attack 1 fase 1_16
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 1220
-        width: 303
-        height: 283
+        x: 2400
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,20 +460,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8158fe465fab743978bb3cbe9652d7df
-      internalID: -1513328129
+      spriteID: 641d2fed2f5cdf442826bb883de421d7
+      internalID: -912561243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_35
+      name: bos Attack 1 fase 1_17
       rect:
         serializedVersion: 2
-        x: 1668
-        y: 1385
-        width: 4
-        height: 4
+        x: 3000
+        y: 2000
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,20 +481,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 770ef4305f58d46698f552ce91dbccc3
-      internalID: -2104146758
+      spriteID: 62debd45a3441a24fabaf8769ace2024
+      internalID: 176021830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_36
+      name: bos Attack 1 fase 1_18
       rect:
         serializedVersion: 2
-        x: 1907
-        y: 1224
-        width: 283
-        height: 269
+        x: 0
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,20 +502,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0af4ff0ae13dd43578b4a1d7c743d2a9
-      internalID: -1757940527
+      spriteID: 3f38bf21ec99be245a0633c1bd8a2417
+      internalID: -1041027013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_37
+      name: bos Attack 1 fase 1_19
       rect:
         serializedVersion: 2
-        x: 2519
-        y: 1227
-        width: 274
-        height: 266
+        x: 600
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +523,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7da2213e2649249fcb3d6591a0557e29
-      internalID: -511225537
+      spriteID: 5c48c73dfa04ae741b4e5537215444eb
+      internalID: 596870953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_38
+      name: bos Attack 1 fase 1_20
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 1222
-        width: 273
-        height: 271
+        x: 1200
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +544,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b26a70e8da5a548c3930eee9369895b0
-      internalID: -1356827114
+      spriteID: c6949b178f457e345aeb52ab92ee658f
+      internalID: 1507226228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_39
+      name: bos Attack 1 fase 1_21
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1364
-        width: 4
-        height: 4
+        x: 1800
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,20 +565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650c1a57f9c8f4c788fe4c164906c3f6
-      internalID: -1585441771
+      spriteID: e92125900ce98694485deddb39e4dab5
+      internalID: -1981257327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_40
+      name: bos Attack 1 fase 1_22
       rect:
         serializedVersion: 2
-        x: 1886
-        y: 1240
-        width: 12
-        height: 10
+        x: 2400
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,20 +586,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51c042d9b165a4c75898f212940e859d
-      internalID: -1729352174
+      spriteID: 205720598d814a645b76bfe2d8714308
+      internalID: 243906734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_41
+      name: bos Attack 1 fase 1_23
       rect:
         serializedVersion: 2
-        x: 112
-        y: 825
-        width: 278
-        height: 272
+        x: 3000
+        y: 1600
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,20 +607,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806579651f66a406489f6efe3ec747e8
-      internalID: -998135890
+      spriteID: c86acd7aaa667ce46b7e7b96c0b788cc
+      internalID: 1050053092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_42
+      name: bos Attack 1 fase 1_24
       rect:
         serializedVersion: 2
-        x: 721
-        y: 825
-        width: 265
-        height: 272
+        x: 0
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,20 +628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83da223ba4a974967a581b9bc588e582
-      internalID: -422665291
+      spriteID: 87ee43aef0b97fa449dedae836a997f0
+      internalID: 631533264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_43
+      name: bos Attack 1 fase 1_25
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 819
-        width: 216
-        height: 283
+        x: 600
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,20 +649,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f32e0dc5908419c82f93fc0c294d47
-      internalID: -368248972
+      spriteID: cb9f2bba22d7d444db65396c697bf4c3
+      internalID: -9545095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_44
+      name: bos Attack 1 fase 1_26
       rect:
         serializedVersion: 2
-        x: 2014
-        y: 819
-        width: 176
-        height: 313
+        x: 1200
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1048,20 +670,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2f5ee95cca14340aaf4a8b27b35202
-      internalID: 12750732
+      spriteID: 7273a6abcff333c4d8ae9d45d5160877
+      internalID: 1455346563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_45
+      name: bos Attack 1 fase 1_27
       rect:
         serializedVersion: 2
-        x: 2610
-        y: 819
-        width: 197
-        height: 345
+        x: 1800
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1069,20 +691,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f1946cebbf3944e9a77eba5b49e44b2
-      internalID: 567402148
+      spriteID: 82fe79279d240b04f8d99d3136a5af6e
+      internalID: -443164151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_46
+      name: bos Attack 1 fase 1_28
       rect:
         serializedVersion: 2
-        x: 3210
-        y: 819
-        width: 258
-        height: 310
+        x: 2400
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,20 +712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ee8b52da2dfa4ccdbcac1f06eb056e3
-      internalID: -1372355860
+      spriteID: 67c9e3b7a413dd74892e5bc10ed17c9e
+      internalID: -329186708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_47
+      name: bos Attack 1 fase 1_29
       rect:
         serializedVersion: 2
-        x: 213
-        y: 418
-        width: 304
-        height: 296
+        x: 3000
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1111,20 +733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8ba4228bbce4eae999b221525c03d6
-      internalID: -1372687414
+      spriteID: d0268b4c87d6cc549989a6c7974b4d41
+      internalID: -493271475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_48
+      name: bos Attack 1 fase 1_30
       rect:
         serializedVersion: 2
-        x: 810
-        y: 420
-        width: 319
-        height: 294
+        x: 0
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,20 +754,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5b9c6ab5ab2b4b0f998ed1367d391d4
-      internalID: -1869991148
+      spriteID: 7519e0f3b5807fb44a278836923abe1b
+      internalID: 1132103789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_49
+      name: bos Attack 1 fase 1_31
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 420
-        width: 300
-        height: 283
+        x: 600
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,20 +775,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15b36068280694a4fb59ac0c9f7edd35
-      internalID: 777033797
+      spriteID: 02b836fc1a54fe84baea0ad52b5b0b68
+      internalID: 1416463196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_50
+      name: bos Attack 1 fase 1_32
       rect:
         serializedVersion: 2
-        x: 2009
-        y: 420
-        width: 285
-        height: 283
+        x: 1200
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,20 +796,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e11f92231c4437198bd09169bc8117
-      internalID: 2004358198
+      spriteID: eba663e301383e64caf257945be6ec6c
+      internalID: 59465439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_51
+      name: bos Attack 1 fase 1_33
       rect:
         serializedVersion: 2
-        x: 2289
-        y: 440
-        width: 7
-        height: 5
+        x: 1800
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1195,20 +817,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de0db7a9eb73a451d8a78a91846b8168
-      internalID: -418203578
+      spriteID: c1e5a4b221e3bb9458c19592f937ec5d
+      internalID: 1873609112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_52
+      name: bos Attack 1 fase 1_34
       rect:
         serializedVersion: 2
-        x: 2610
-        y: 420
-        width: 278
-        height: 283
+        x: 2400
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1216,20 +838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8efc0d376aead4da59fe9e13dffcf430
-      internalID: -1684107686
+      spriteID: 0a3b3a0189e99de4e9ca929e32bb459e
+      internalID: 2049944109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_53
+      name: bos Attack 1 fase 1_35
       rect:
         serializedVersion: 2
-        x: 2890
-        y: 438
-        width: 12
-        height: 5
+        x: 3000
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,20 +859,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed18d12c24c4048f8abcc936076172ff
-      internalID: 1096357788
+      spriteID: 4fbbf51e358c0634bb0832f8a4c8874c
+      internalID: 596578938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_54
+      name: bos Attack 1 fase 1_36
       rect:
         serializedVersion: 2
-        x: 3210
-        y: 420
-        width: 293
-        height: 283
+        x: 0
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,20 +880,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a911f3d12bd846dda6aa1fbf924f83a
-      internalID: 285513272
+      spriteID: a6627f8dda9f54647898699334fa891d
+      internalID: 512696055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_55
+      name: bos Attack 1 fase 1_37
       rect:
         serializedVersion: 2
-        x: 209
-        y: 19
-        width: 280
-        height: 283
+        x: 600
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1279,20 +901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7d076da06bd467a93f0d33919d7539
-      internalID: -31604785
+      spriteID: 36152ec988a41dc4d9bce24a9f416c6b
+      internalID: 1459811519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack 1 fase 1_56
+      name: bos Attack 1 fase 1_38
       rect:
         serializedVersion: 2
-        x: 490
-        y: 37
-        width: 13
-        height: 7
+        x: 1200
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1300,8 +922,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b43eca12162c401c97cd1a468cd4552
-      internalID: 820476853
+      spriteID: 968286c5c7091954fa70a3e5392aa9b5
+      internalID: 1453666785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bos Attack 1 fase 1_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 400
+        width: 600
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2051bf73d419eab439202fa9cdb80a41
+      internalID: 1595289796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bos Attack 1 fase 1_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 400
+        width: 600
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777c48b563f401e428ee76912bfcbbea
+      internalID: -1690817299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bos Attack 1 fase 1_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 400
+        width: 600
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11a3d136b68dd045945cf21c61af3eb
+      internalID: 2025815265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bos Attack 1 fase 1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4e97ba44c9857478a3a112509c0a1b
+      internalID: -1831155841
       vertices: []
       indices: 
       edges: []
@@ -1317,63 +1023,49 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack 1 fase 1_0: -1493935504
-      Attack 1 fase 1_1: 1234501358
-      Attack 1 fase 1_10: 1535503420
-      Attack 1 fase 1_11: -1659543944
-      Attack 1 fase 1_12: -1725429034
-      Attack 1 fase 1_13: -1143812953
-      Attack 1 fase 1_14: -1325512299
-      Attack 1 fase 1_15: 968428023
-      Attack 1 fase 1_16: 1425145202
-      Attack 1 fase 1_17: 1105316065
-      Attack 1 fase 1_18: -1282944276
-      Attack 1 fase 1_19: -1852913413
-      Attack 1 fase 1_2: 1707752528
-      Attack 1 fase 1_20: -922506144
-      Attack 1 fase 1_21: -350549026
-      Attack 1 fase 1_22: 668557142
-      Attack 1 fase 1_23: -2088577285
-      Attack 1 fase 1_24: -636261120
-      Attack 1 fase 1_25: 103924091
-      Attack 1 fase 1_26: -470933872
-      Attack 1 fase 1_27: 1606719404
-      Attack 1 fase 1_28: -1208554947
-      Attack 1 fase 1_29: 634937856
-      Attack 1 fase 1_3: -1050523889
-      Attack 1 fase 1_30: -551353280
-      Attack 1 fase 1_31: 806961717
-      Attack 1 fase 1_32: 1358399079
-      Attack 1 fase 1_33: -1799613483
-      Attack 1 fase 1_34: -1513328129
-      Attack 1 fase 1_35: -2104146758
-      Attack 1 fase 1_36: -1757940527
-      Attack 1 fase 1_37: -511225537
-      Attack 1 fase 1_38: -1356827114
-      Attack 1 fase 1_39: -1585441771
-      Attack 1 fase 1_4: 1757147663
-      Attack 1 fase 1_40: -1729352174
-      Attack 1 fase 1_41: -998135890
-      Attack 1 fase 1_42: -422665291
-      Attack 1 fase 1_43: -368248972
-      Attack 1 fase 1_44: 12750732
-      Attack 1 fase 1_45: 567402148
-      Attack 1 fase 1_46: -1372355860
-      Attack 1 fase 1_47: -1372687414
-      Attack 1 fase 1_48: -1869991148
-      Attack 1 fase 1_49: 777033797
-      Attack 1 fase 1_5: -831656386
-      Attack 1 fase 1_50: 2004358198
-      Attack 1 fase 1_51: -418203578
-      Attack 1 fase 1_52: -1684107686
-      Attack 1 fase 1_53: 1096357788
-      Attack 1 fase 1_54: 285513272
-      Attack 1 fase 1_55: -31604785
-      Attack 1 fase 1_56: 820476853
-      Attack 1 fase 1_6: -717642492
-      Attack 1 fase 1_7: -1760113424
-      Attack 1 fase 1_8: -695566247
-      Attack 1 fase 1_9: -1826970329
+      bos Attack 1 fase 1_0: 660228190
+      bos Attack 1 fase 1_1: 27093015
+      bos Attack 1 fase 1_10: 478238389
+      bos Attack 1 fase 1_11: 2041066874
+      bos Attack 1 fase 1_12: 281541143
+      bos Attack 1 fase 1_13: -1766926613
+      bos Attack 1 fase 1_14: 863478740
+      bos Attack 1 fase 1_15: -711812344
+      bos Attack 1 fase 1_16: -912561243
+      bos Attack 1 fase 1_17: 176021830
+      bos Attack 1 fase 1_18: -1041027013
+      bos Attack 1 fase 1_19: 596870953
+      bos Attack 1 fase 1_2: -1369558481
+      bos Attack 1 fase 1_20: 1507226228
+      bos Attack 1 fase 1_21: -1981257327
+      bos Attack 1 fase 1_22: 243906734
+      bos Attack 1 fase 1_23: 1050053092
+      bos Attack 1 fase 1_24: 631533264
+      bos Attack 1 fase 1_25: -9545095
+      bos Attack 1 fase 1_26: 1455346563
+      bos Attack 1 fase 1_27: -443164151
+      bos Attack 1 fase 1_28: -329186708
+      bos Attack 1 fase 1_29: -493271475
+      bos Attack 1 fase 1_3: -486082386
+      bos Attack 1 fase 1_30: 1132103789
+      bos Attack 1 fase 1_31: 1416463196
+      bos Attack 1 fase 1_32: 59465439
+      bos Attack 1 fase 1_33: 1873609112
+      bos Attack 1 fase 1_34: 2049944109
+      bos Attack 1 fase 1_35: 596578938
+      bos Attack 1 fase 1_36: 512696055
+      bos Attack 1 fase 1_37: 1459811519
+      bos Attack 1 fase 1_38: 1453666785
+      bos Attack 1 fase 1_39: 1595289796
+      bos Attack 1 fase 1_4: 1255785659
+      bos Attack 1 fase 1_40: -1690817299
+      bos Attack 1 fase 1_41: 2025815265
+      bos Attack 1 fase 1_42: -1831155841
+      bos Attack 1 fase 1_5: -2103570425
+      bos Attack 1 fase 1_6: 914922552
+      bos Attack 1 fase 1_7: 1296570377
+      bos Attack 1 fase 1_8: 1971457637
+      bos Attack 1 fase 1_9: -1548899888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

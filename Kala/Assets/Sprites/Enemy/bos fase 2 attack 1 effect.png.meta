@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_0
+      name: bos fase 2 attack 1 effect_0
       rect:
         serializedVersion: 2
-        x: 117
-        y: 788
-        width: 19
-        height: 27
+        x: 0
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf30679b0ed890942935ad9aca78ef95
-      internalID: -781459590
+      spriteID: e19f25b505dfd0b458a77a5878a23556
+      internalID: -868252008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_1
+      name: bos fase 2 attack 1 effect_1
       rect:
         serializedVersion: 2
-        x: 361
-        y: 788
-        width: 48
-        height: 27
+        x: 256
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b25b584c848de74cad83678e3db2b9e
-      internalID: 904310683
+      spriteID: 5b8ffba7fe2216b4e8c5a901e2d23964
+      internalID: 1351305094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_2
+      name: bos fase 2 attack 1 effect_2
       rect:
         serializedVersion: 2
-        x: 617
-        y: 788
-        width: 50
-        height: 42
+        x: 512
+        y: 768
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac8dc9f45a973c43ba98fd8d31425d8
-      internalID: 1943629823
+      spriteID: 0ec3b0bfef232d24b95c4b7b89799aef
+      internalID: 453316065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_3
+      name: bos fase 2 attack 1 effect_3
       rect:
         serializedVersion: 2
-        x: 94
-        y: 532
-        width: 76
-        height: 63
+        x: 0
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad38b33c62fce0e4b8f119a1fd7421ad
-      internalID: -1007590852
+      spriteID: 120afcc907660ff448540a8cbc5b138a
+      internalID: 992701650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_4
+      name: bos fase 2 attack 1 effect_4
       rect:
         serializedVersion: 2
-        x: 350
-        y: 532
-        width: 76
-        height: 89
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f40c9de5297ffba47bf4878bbcef29d5
-      internalID: 2078783529
+      spriteID: 116141f58f21d2340895c34a0095b63c
+      internalID: -2002192531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_5
+      name: bos fase 2 attack 1 effect_5
       rect:
         serializedVersion: 2
-        x: 606
-        y: 532
-        width: 81
-        height: 90
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84bc07bddf8408d4db32e05e1f4d0f19
-      internalID: 2104702349
+      spriteID: ccea28aa78293754b9661fa43e5daa40
+      internalID: -1937087785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_6
+      name: bos fase 2 attack 1 effect_6
       rect:
         serializedVersion: 2
-        x: 94
-        y: 276
-        width: 81
-        height: 98
+        x: 0
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1723e4e31d861d7408ed622d256bd9ea
-      internalID: -367381986
+      spriteID: af2eeecbb0772e84cbb832fe71e952be
+      internalID: -1458362606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_7
+      name: bos fase 2 attack 1 effect_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 276
-        width: 81
-        height: 119
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08db06e9836a3546a97040273945df1
-      internalID: 552074018
+      spriteID: 14270207fb13293499b80e2565cd1777
+      internalID: 1519056097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_8
+      name: bos fase 2 attack 1 effect_8
       rect:
         serializedVersion: 2
-        x: 606
-        y: 276
-        width: 82
-        height: 133
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d021bac92777a564eb24993acc025e76
-      internalID: -1282074271
+      spriteID: e913fb030449c39409aefd15f8ba6750
+      internalID: 1430877449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fase 2 attack 1 effect_9
+      name: bos fase 2 attack 1 effect_9
       rect:
         serializedVersion: 2
-        x: 90
-        y: 20
-        width: 88
-        height: 153
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3292985433b30cc45bbd9ba5912fa77a
-      internalID: -633428092
+      spriteID: 0d5daa48dc7f03e4b916c08e347c4cae
+      internalID: 1416543097
       vertices: []
       indices: 
       edges: []
@@ -317,16 +317,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fase 2 attack 1 effect_0: -781459590
-      fase 2 attack 1 effect_1: 904310683
-      fase 2 attack 1 effect_2: 1943629823
-      fase 2 attack 1 effect_3: -1007590852
-      fase 2 attack 1 effect_4: 2078783529
-      fase 2 attack 1 effect_5: 2104702349
-      fase 2 attack 1 effect_6: -367381986
-      fase 2 attack 1 effect_7: 552074018
-      fase 2 attack 1 effect_8: -1282074271
-      fase 2 attack 1 effect_9: -633428092
+      bos fase 2 attack 1 effect_0: -868252008
+      bos fase 2 attack 1 effect_1: 1351305094
+      bos fase 2 attack 1 effect_2: 453316065
+      bos fase 2 attack 1 effect_3: 992701650
+      bos fase 2 attack 1 effect_4: -2002192531
+      bos fase 2 attack 1 effect_5: -1937087785
+      bos fase 2 attack 1 effect_6: -1458362606
+      bos fase 2 attack 1 effect_7: 1519056097
+      bos fase 2 attack 1 effect_8: 1430877449
+      bos fase 2 attack 1 effect_9: 1416543097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

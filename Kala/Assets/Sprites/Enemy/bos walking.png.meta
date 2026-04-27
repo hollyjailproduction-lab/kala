@@ -113,10 +113,10 @@ TextureImporter:
       name: bos walking_0
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1221
-        width: 291
-        height: 281
+        x: 0
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: bos walking_1
       rect:
         serializedVersion: 2
-        x: 810
-        y: 1221
-        width: 297
-        height: 278
+        x: 600
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: bos walking_2
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 1221
-        width: 297
-        height: 278
+        x: 1200
+        y: 1200
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: bos walking_3
       rect:
         serializedVersion: 2
-        x: 206
-        y: 823
-        width: 302
-        height: 276
+        x: 0
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: bos walking_4
       rect:
         serializedVersion: 2
-        x: 806
-        y: 823
-        width: 297
-        height: 276
+        x: 600
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: bos walking_5
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 823
-        width: 285
-        height: 276
+        x: 1200
+        y: 800
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: bos walking_6
       rect:
         serializedVersion: 2
-        x: 206
-        y: 423
-        width: 297
-        height: 276
+        x: 0
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: bos walking_7
       rect:
         serializedVersion: 2
-        x: 806
-        y: 423
-        width: 302
-        height: 276
+        x: 600
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: bos walking_8
       rect:
         serializedVersion: 2
-        x: 1410
-        y: 421
-        width: 297
-        height: 278
+        x: 1200
+        y: 400
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: bos walking_9
       rect:
         serializedVersion: 2
-        x: 211
-        y: 21
-        width: 291
-        height: 281
+        x: 0
+        y: 0
+        width: 600
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
