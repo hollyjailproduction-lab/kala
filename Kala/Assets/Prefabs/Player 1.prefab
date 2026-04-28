@@ -143,11 +143,11 @@ GameObject:
   - component: {fileID: 8383970196347390691}
   - component: {fileID: 402196391368091531}
   - component: {fileID: 2475393792463432191}
-  - component: {fileID: 7591485240535382857}
   - component: {fileID: 1330646459285183627}
   - component: {fileID: 1820723846180411823}
   - component: {fileID: 1300227503212666245}
   - component: {fileID: 4811410099097533881}
+  - component: {fileID: 6895671761389701151}
   m_Layer: 8
   m_Name: Player 1
   m_TagString: Player
@@ -348,20 +348,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7591485240535382857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6935106956773137978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2847d5f85c1c5e4da627e208d5346ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 100
-  currentHp: 0
 --- !u!114 &1330646459285183627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,6 +510,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6895671761389701151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935106956773137978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 743e132f0f3800745b77e2ba4dff50d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  currentHp: 100
 --- !u!1 &8347126617423432285
 GameObject:
   m_ObjectHideFlags: 0

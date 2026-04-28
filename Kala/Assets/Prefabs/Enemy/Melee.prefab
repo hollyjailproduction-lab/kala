@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4747545702092679321}
   - component: {fileID: 5024828394430456930}
   - component: {fileID: 520643229727239260}
-  - component: {fileID: 5840190617719212507}
   - component: {fileID: 6870261625136332151}
+  - component: {fileID: 1122368484014584172}
   m_Layer: 9
   m_Name: Melee
   m_TagString: Enemy
@@ -154,20 +154,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15544546, y: 0.5523689}
   m_EdgeRadius: 0
---- !u!114 &5840190617719212507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3812821115479636614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2847d5f85c1c5e4da627e208d5346ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 3
-  currentHp: 0
 --- !u!114 &6870261625136332151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +175,19 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &1122368484014584172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812821115479636614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb89d7f6e3949c42b81542329bc701e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 10
+  currentHp: 9
+  rewardExperience: 10
+  deathEffect: {fileID: 0}
