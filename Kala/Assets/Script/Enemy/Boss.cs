@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    private bool isPlayerInsideArea = true;
     public Transform player;
     public bool isFlipped = false;
 
@@ -24,5 +25,14 @@ public class Boss : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             isFlipped = true;
         }
+    }
+    public void SetPlayerInsideArea(bool inside)
+    {
+        isPlayerInsideArea = inside;
+    }
+
+    public bool CanChasePlayer()
+    {
+        return isPlayerInsideArea;
     }
 }

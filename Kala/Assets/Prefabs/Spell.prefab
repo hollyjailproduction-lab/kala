@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6978397019877893981}
   - component: {fileID: 7975461125951814054}
   - component: {fileID: 5028975856957216910}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
