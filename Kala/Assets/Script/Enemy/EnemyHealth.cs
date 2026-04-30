@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    [SerializeField] protected int rewardExperience = 10;
     [SerializeField] protected GameObject deathEffect;
 
     protected override void OnDeath()

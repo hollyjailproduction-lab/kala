@@ -32,7 +32,7 @@ public abstract class Health : MonoBehaviour
         OnDeath();
     }
 
-    protected abstract void OnDeath(); // setiap turunan punya perilaku mati sendiri
+    protected abstract void OnDeath();
 
     public virtual void AddHealth(int amount)
     {
@@ -41,13 +41,6 @@ public abstract class Health : MonoBehaviour
         currentHp = Mathf.Clamp(currentHp, 0, maxHp);
     }
 
-    public virtual void Revive()
-    {
-        
-    }
-
-    public virtual void AddMaxHealth(int amount)
-    {
-        
-    }
+    public virtual void Revive() { }
+    public virtual void AddMaxHealth(int amount) { }
 }

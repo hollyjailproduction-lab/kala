@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    private bool isPlayerInsideArea = true;
+    private bool isPlayerInsideArea = false;
     public Transform player;
     public bool isFlipped = false;
 

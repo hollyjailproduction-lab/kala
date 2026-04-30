@@ -41,24 +41,8 @@ public class PlayerHealth : Health
         if (GameManager.instance != null)
             GameManager.instance.die();
 
-        // Integrasi DaySystem (salin dari kode lama)
-        if (DaySystem.Instance != null)
-        {
-            // ... (salin sesuai kode asli)
-        }
-    }
-
-    public override void Revive()
-    {
-        if (!dead) return;
-        dead = false;
-        currentHp = maxHp;
-        if (GameManager.instance != null)
-            GameManager.instance.playerCurrentHealth = currentHp;
-        PlayerMovement pm = GetComponent<PlayerMovement>();
-        if (pm != null) pm.enabled = true;
-        HealthBar healthBar = FindObjectOfType<HealthBar>();
-        if (healthBar != null) healthBar.SetValue(currentHp);
+        // Integrasi DaySystem (opsional, komentar jika tidak ada)
+        // if (DaySystem.Instance != null) { ... }
     }
 
     public override void AddMaxHealth(int amount)
@@ -78,5 +62,20 @@ public class PlayerHealth : Health
             healthBar.SetMaxValue(maxHp);
             healthBar.SetValue(currentHp);
         }
+    }
+
+    public override void Revive()
+    {
+        if (!dead) return;
+        dead = false;
+        currentHp = maxHp;
+        if (GameManager.instance != null)
+            GameManager.instance.playerCurrentHealth = currentHp;
+        if (playerMovement != null)
+            playerMovement.enabled = true;
+
+        HealthBar healthBar = FindObjectOfType<HealthBar>();
+        if (healthBar != null)
+            healthBar.SetValue(currentHp);
     }
 }
