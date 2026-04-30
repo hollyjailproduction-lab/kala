@@ -35,4 +35,10 @@ public class Boss : MonoBehaviour
     {
         return isPlayerInsideArea;
     }
+
+    public void ResetBossHealth()
+    {
+        BossHealth bh = GetComponent<BossHealth>();
+        if (bh != null) bh.ResetHealth();
+    }
 }

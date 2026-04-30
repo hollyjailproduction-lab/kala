@@ -40,9 +40,12 @@ public class BossRun : StateMachineBehaviour
         {
             Vector2 returnPos = Vector2.MoveTowards(rb.position, startPosition, speed * Time.fixedDeltaTime);
             rb.MovePosition(returnPos);
-            // Jika sudah sampai, animasi idle (opsional)
             if (Vector2.Distance(rb.position, startPosition) <= 0.1f)
+            {
                 animator.SetBool("isIdle", true);
+                // Reset health saat sudah di posisi awal
+                boss.ResetBossHealth();   // panggil method di Boss
+            }
             return;
         }
 

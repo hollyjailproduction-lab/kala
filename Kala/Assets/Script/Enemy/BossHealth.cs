@@ -8,7 +8,19 @@ public class BossHealth : EnemyHealth
     [SerializeField] private int phase2Threshold = 200;
     private bool isPhase2 = false;
 
-    // Hapus override Awake, biarkan nilai maxHp dari Inspector
+    public void ResetHealth()
+    {
+        // Reset health ke max
+        currentHp = maxHp;
+        
+        // Reset fase enrage
+        isPhase2 = false;
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+            anim.SetBool("IsEnraged", false);
+        
+        Debug.Log($"Boss health reset to {maxHp}");
+    }
 
     public override void TakeDamage(int damage, DamageSource source = DamageSource.Unknown, int enemyLevel = 0)
     {
@@ -19,7 +31,7 @@ public class BossHealth : EnemyHealth
             isPhase2 = true;
             GetComponent<Animator>().SetBool("IsEnraged", true);
         }
-        Debug.Log($"Boss HP: {currentHp}, threshold: {phase2Threshold}");
+        //Debug.Log($"Boss HP: {currentHp}, threshold: {phase2Threshold}");
     }
 
     protected override void OnDeath()

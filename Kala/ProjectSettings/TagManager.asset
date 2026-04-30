@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Follower
   - NPC
+  - Spell
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - Enemy
   - Froura
   - NPC
-  - 
-  - 
+  - Spell
+  - SpecialArea
   - 
   - 
   - 
