@@ -6425,7 +6425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
-  currentHp: 15
+  currentHp: 100
   rewardExperience: 10
   deathEffect: {fileID: 0}
   isInvulnerable: 0
