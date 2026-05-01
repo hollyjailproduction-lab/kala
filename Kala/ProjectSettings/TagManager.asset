@@ -9,6 +9,7 @@ TagManager:
   - Follower
   - NPC
   - Spell
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
