@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3320149542370047666}
   - component: {fileID: 725320064781637669}
   - component: {fileID: 4302999973131137935}
+  - component: {fileID: 1121780056324573635}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2197ad8a015b2b4baa831c3839e474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activatedCheckpoints: []
   transitionedFromScene: 
   playerCurrentHealth: 0
   playerMaxHealth: 100
@@ -88,3 +90,15 @@ MonoBehaviour:
   penaltyLevel4: 7
   penaltyLevel5: 10
   penaltyLevel6: 15
+--- !u!114 &1121780056324573635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193054483499125392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf5de4bf2b568f4f960da2a15a12d3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

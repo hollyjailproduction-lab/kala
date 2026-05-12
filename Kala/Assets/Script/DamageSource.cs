@@ -2,5 +2,6 @@ public enum DamageSource
 {
     Unknown,
     Enemy,
-    Trap
+    Trap,
+    Player
 }

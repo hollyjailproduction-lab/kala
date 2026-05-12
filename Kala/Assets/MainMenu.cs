@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-    public void PlaySampleScene ()
+    public void PlaySampleScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public void ExitSampleScene ()
+
+    public void ContinueGame()
     {
-        Debug.Log ("QUIT!");
+        SaveController saveController = FindObjectOfType<SaveController>();
+        if (saveController != null && saveController.HasSaveFile())
+        {
+            saveController.ContinueGame();
+        }
+        else
+        {
+            Debug.Log("No save file found. Starting new game.");
+            PlaySampleScene(); // atau load scene default
+        }
+    }
+
+    public void ExitSampleScene()
+    {
+        Debug.Log("QUIT!");
         Application.Quit();
     }
 }

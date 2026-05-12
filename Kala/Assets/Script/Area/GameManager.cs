@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     Vector2 checkpointPos;
-    string checkpointScene;          // scene tempat checkpoint terakhir
+    public Vector2 GetCheckpointPos() => checkpointPos;
+    string checkpointScene;
+    public List<Vector2> activatedCheckpoints = new List<Vector2>();
+
     Rigidbody2D playerRb;
     Transform playerTransform;
     private Vector3 originalPlayerScale;
@@ -61,7 +64,18 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        SyncCheckpointsWithSave();
         RefreshPlayerReference();
+
+        if (PlayerPrefs.HasKey("ContinueScene"))
+        {
+            SaveController saveController = FindObjectOfType<SaveController>();
+            if (saveController != null)
+            {
+                saveController.ApplyLoadedData();
+            }
+            PlayerPrefs.DeleteKey("ContinueScene");
+        }
     }
 
     void RefreshPlayerReference()
@@ -111,7 +125,7 @@ public class GameManager : MonoBehaviour
     {
         checkpointPos = pos;
         checkpointScene = SceneManager.GetActiveScene().name;
-        Debug.Log($"Checkpoint updated at {checkpointScene}: {checkpointPos}");
+        Debug.Log($"Last checkpoint updated at {checkpointScene}: {checkpointPos}");
     }
 
     public void die()
@@ -221,5 +235,19 @@ public class GameManager : MonoBehaviour
         if (playerHealth != null) playerHealth.Revive();
 
         playerRb.simulated = true;
+    }
+
+    void SyncCheckpointsWithSave()
+    {
+        Checkpoint[] allCheckpoints = FindObjectsOfType<Checkpoint>();
+        foreach (Checkpoint cp in allCheckpoints)
+        {
+            // Hanya aktifkan checkpoint yang posisinya sama dengan checkpointPos tersimpan
+            if (Vector2.Distance(cp.transform.position, checkpointPos) < 0.1f)
+            {
+                cp.ActivateFromSave();
+            }
+            // Hapus bagian else yang memanggil ResetCheckpoint()
+        }
     }
 }

@@ -1,30 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Inventory.Model;
 using Inventory.UI;
 
 public class InGameMenu : MonoBehaviour
 {
-    [Header("UI Panel")]
-    public GameObject menuPanel;          // Panel yang berisi tombol Continue & Main Menu
-
-    [Header("Scene Name")]
-
-    [Header("Inventory Reference")]
+    public GameObject menuPanel;
     public InventoryPage inventoryPage;
-    public string mainMenuSceneName = "MainMenu"; // Nama scene main menu Anda
+    public string mainMenuSceneName = "MainMenu";
 
     private bool isMenuOpen = false;
 
+    private void Start()
+    {
+        if (inventoryPage == null)
+            inventoryPage = FindObjectOfType<InventoryPage>();
+    }
+
     private void Update()
     {
-        // Tekan ESC untuk buka/tutup menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (inventoryPage != null && inventoryPage.gameObject.activeSelf)
             {
-                inventoryPage.Hide();  // Asumsikan ada method Hide()
-                return;  // Jangan proses menu
+                inventoryPage.Hide();
+                return;
             }
             if (isMenuOpen)
                 ResumeGame();
@@ -35,18 +34,17 @@ public class InGameMenu : MonoBehaviour
 
     private void OpenMenu()
     {
+        if (menuPanel == null) return;
         isMenuOpen = true;
         menuPanel.SetActive(true);
-        PauseController.SetPause(true);   // Pause game (menggunakan sistem pause yang sudah ada)
-        // (Opsional) Lock cursor agar bisa klik UI
+        PauseController.SetPause(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    // Method untuk tombol Continue
     public void ResumeGame()
     {
-        Debug.Log("ResumeGame dipanggil!"); // <- tambahkan
+        if (menuPanel == null) return;
         isMenuOpen = false;
         menuPanel.SetActive(false);
         PauseController.SetPause(false);
@@ -56,7 +54,6 @@ public class InGameMenu : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        Debug.Log("GoToMainMenu dipanggil!"); // <- tambahkan
         PauseController.SetPause(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(mainMenuSceneName);

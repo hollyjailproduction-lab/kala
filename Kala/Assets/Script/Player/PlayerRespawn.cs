@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
-    private Transform currentCheckpoint;
+    //private Transform currentCheckpoint;
     private PlayerHealth playerHealth;
 
     private void Awake()
@@ -12,12 +12,13 @@ public class PlayerRespawn : MonoBehaviour
 
     public void Respawn()
     {
-        if (currentCheckpoint != null)
-            transform.position = currentCheckpoint.position;
+        if (GameManager.instance != null)
+            transform.position = GameManager.instance.GetCheckpointPos();
         if (playerHealth != null)
             playerHealth.Revive();
     }
 
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Checkpoint"))
@@ -36,4 +37,5 @@ public class PlayerRespawn : MonoBehaviour
                 anim.SetTrigger("appear");
         }
     }
+    */
 }
