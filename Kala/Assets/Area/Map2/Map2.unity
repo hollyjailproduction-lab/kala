@@ -563,6 +563,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1122368484014584172, guid: 6f19049e7eff3d74fbda6d157247aa3a, type: 3}
+      propertyPath: maxHp
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122368484014584172, guid: 6f19049e7eff3d74fbda6d157247aa3a, type: 3}
+      propertyPath: currentHp
+      value: 9000
+      objectReference: {fileID: 0}
     - target: {fileID: 3812821115479636614, guid: 6f19049e7eff3d74fbda6d157247aa3a, type: 3}
       propertyPath: m_Name
       value: Melee
@@ -5485,11 +5493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.35
+      value: 21.06
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5524,7 +5532,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1819783448072192460, guid: 3c492de6daace09418b52b4041721382, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c492de6daace09418b52b4041721382, type: 3}
