@@ -31,6 +31,9 @@ public class PlayerHealth : Health
         HealthBar healthBar = FindObjectOfType<HealthBar>();
         if (healthBar != null)
             healthBar.SetValue(currentHp);
+
+        PlayerCombo combo = GetComponent<PlayerCombo>();
+        if (combo != null) combo.CancelAttack();
     }
 
     protected override void OnDeath()

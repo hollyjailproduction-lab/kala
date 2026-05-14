@@ -74,4 +74,12 @@ public class PlayerCombo : MonoBehaviour
             if (health != null) health.TakeDamage(dmg, DamageSource.Player);
         }
     }
+
+    public void CancelAttack()
+    {
+        isAttacking = false;
+        pendingInput = false;
+        currentAttack = 0;
+        Debug.Log("Attack cancelled due to damage");
+    }
 }
