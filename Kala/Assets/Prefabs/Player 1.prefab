@@ -64,7 +64,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.114565, y: -0.18908796}
+  m_Offset: {x: 0, y: -0.18908796}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,37 +77,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2903646, y: 0.6218241}
   m_EdgeRadius: 0
---- !u!1 &1819783448072192460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052838996887577260}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1052838996887577260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819783448072192460}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.518, y: -0.166, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8281194462442995768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106561307816607527
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +215,6 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1052838996887577260}
   - {fileID: 7002736065316535367}
   - {fileID: 1016011418501351671}
   m_Father: {fileID: 0}
@@ -335,7 +303,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2791291, y: -0.18383181}
+  m_Offset: {x: 0, y: -0.18383181}
   m_Size: {x: 0.29718027, y: 0.63233656}
   m_Direction: 0
 --- !u!50 &7421047792117207320
@@ -385,6 +353,8 @@ MonoBehaviour:
     m_Bits: 128
   speed: 3
   jumpForce: 5
+  slideDuration: 0.4
+  slideSpeedMultiplier: 1.8
 --- !u!95 &2475393792463432191
 Animator:
   serializedVersion: 5
@@ -563,6 +533,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9a6e40a5-b639-4641-9117-7a2d7b881011
     m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8383970196347390691}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnSlide
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7a5018f8-26e1-428e-8a84-ba4f9119d8c8
+    m_ActionName: Player/Slide[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -639,7 +625,7 @@ Transform:
   m_GameObject: {fileID: 8347126617423432285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.307, y: -0.019, z: 0}
+  m_LocalPosition: {x: 0, y: -0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -678,7 +664,7 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016771953, y: -0.18579876}
+  m_Offset: {x: 0, y: -0.18579876}
   m_Size: {x: 0.5428747, y: 0.6284036}
   m_Direction: 0
 --- !u!114 &1310024491721487607

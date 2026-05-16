@@ -184,4 +184,10 @@ public class PlayerMovement : MonoBehaviour
     {
         return !onWall() && !IsSliding;
     }
+
+    public void IdleState()
+    {
+        rb.velocity = Vector2.zero;
+        anim.SetTrigger("idle");
+    }
 }

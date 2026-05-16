@@ -4,18 +4,26 @@ public class PlayerRespawn : MonoBehaviour
 {
     //private Transform currentCheckpoint;
     private PlayerHealth playerHealth;
+    private PlayerMovement playerMovement;
 
     private void Awake()
     {
         playerHealth = GetComponent<PlayerHealth>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     public void Respawn()
     {
         if (GameManager.instance != null)
             transform.position = GameManager.instance.GetCheckpointPos();
+
         if (playerHealth != null)
             playerHealth.Revive();
+
+        if (playerMovement != null)
+            playerMovement.IdleState();
+        
+
     }
 
     /*

@@ -5487,25 +5487,9 @@ PrefabInstance:
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 1945575841}
-    - target: {fileID: 2088376108953036778, guid: 3c492de6daace09418b52b4041721382, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757832322698828857, guid: 3c492de6daace09418b52b4041721382, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6935106956773137978, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_Name
       value: Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7002736065316535367, guid: 3c492de6daace09418b52b4041721382, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739680587875829288, guid: 3c492de6daace09418b52b4041721382, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5547,13 +5531,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8998204904241554916, guid: 3c492de6daace09418b52b4041721382, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1819783448072192460, guid: 3c492de6daace09418b52b4041721382, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c492de6daace09418b52b4041721382, type: 3}
