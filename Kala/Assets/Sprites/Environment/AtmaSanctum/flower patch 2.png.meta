@@ -101,9 +101,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 36
-        height: 10
+        y: 6
+        width: 12
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,6 +113,90 @@ TextureImporter:
       bones: []
       spriteID: d77a0a803973b4a8594d9a20c2fa8a0f
       internalID: -1139312441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower patch 2_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa4d18b06f7c41bea185cb79f425a4c
+      internalID: 950400611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower patch 2_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2f31b49bcd24ab7b23e85a551e6206
+      internalID: -1872602277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower patch 2_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dfa81d443c0494a9610f3d732f56bd
+      internalID: 1646929762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower patch 2_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 6
+        width: 3
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5089124, y: 0.5178251}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bbc2ed4af1c4a39bd9a1824f2455d4
+      internalID: -1957655490
       vertices: []
       indices: 
       edges: []
@@ -129,6 +213,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       flower patch 2_0: -1139312441
+      flower patch 2_1: 950400611
+      flower patch 2_2: -1872602277
+      flower patch 2_3: 1646929762
+      flower patch 2_4: -1957655490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
