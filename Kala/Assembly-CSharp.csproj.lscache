@@ -71,6 +71,7 @@ Assets/
    BossHealth.cs
    BossRun.cs
    EnemyHealth.cs
+   EnemyHealthBar.cs
    EnemyPatrol.cs
    Melee.cs
   Enemy_Sideways.cs
@@ -387,9 +388,7 @@ Temp/bin/Debug/
  Unity.VisualScripting.State.dll
  Unity.VisualScripting.State.Editor.dll
  Unity.VisualStudio.Editor.dll
- UnityEditor.TestRunner.dll
  UnityEditor.UI.dll
- UnityEngine.TestRunner.dll
  UnityEngine.UI.dll
 
 [analyzerReferences]

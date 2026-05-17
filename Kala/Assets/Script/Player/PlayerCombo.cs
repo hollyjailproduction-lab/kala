@@ -66,6 +66,7 @@ public class PlayerCombo : MonoBehaviour
     // Animation Event – frame damage
     public void ComboApplyDamage()
     {
+        if (currentAttack < 1 || currentAttack > damage.Length) return;
         int dmg = damage[currentAttack - 1];
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, 1.2f, enemyLayer);
         foreach (var hit in hits)
