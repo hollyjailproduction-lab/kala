@@ -258,7 +258,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 338373589
-  m_SortingLayer: 3
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2087473630, guid: 92f26d20f9c7e5244bd8c968c61c3a8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -351,10 +351,10 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  speed: 3
-  jumpForce: 5
+  speed: 5
+  jumpForce: 7.5
   slideDuration: 0.4
-  slideSpeedMultiplier: 1.8
+  slideSpeedMultiplier: 2.1
 --- !u!95 &2475393792463432191
 Animator:
   serializedVersion: 5
