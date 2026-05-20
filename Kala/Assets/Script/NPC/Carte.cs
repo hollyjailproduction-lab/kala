@@ -10,6 +10,8 @@ public class Carte : MonoBehaviour
     public string[] repeatDialogs;
     public Sprite[] repeatSprites;
 
+    public string[] repeatCharacterNames; // Nama karakter untuk dialog ulang (opsional)
+
     private int currentStep = 0;
     private bool playerIsClose;
     private bool hasTalked = false;
@@ -17,10 +19,11 @@ public class Carte : MonoBehaviour
     [System.Serializable]
     public struct DialogEntry
     {
-        public bool isArray;          // true = linear (array), false = node
-        public string[] dialogArray;   // isi jika isArray = true
-        public Sprite[] spriteArray;   // isi jika isArray = true
-        public DialogNode dialogNode;  // isi jika isArray = false
+        public bool isArray;            // true = linear (array), false = node
+        public string[] characterNames; // nama karakter per baris dialog (opsional)
+        public string[] dialogArray;    // isi jika isArray = true
+        public Sprite[] spriteArray;    // isi jika isArray = true
+        public DialogNode dialogNode;   // isi jika isArray = false
     }
 
     private void OnEnable()
@@ -62,7 +65,7 @@ public class Carte : MonoBehaviour
             else
             {
                 // Sudah pernah bicara: gunakan dialog ulang
-                DialogManager.Instance.StartDialog(repeatDialogs, repeatSprites);
+                DialogManager.Instance.StartDialog(repeatDialogs, repeatSprites, repeatCharacterNames);
             }
         }
     }
@@ -79,7 +82,7 @@ public class Carte : MonoBehaviour
         DialogEntry entry = dialogSequence[currentStep];
         if (entry.isArray)
         {
-            DialogManager.Instance.StartDialog(entry.dialogArray, entry.spriteArray);
+            DialogManager.Instance.StartDialog(entry.dialogArray, entry.spriteArray, entry.characterNames);
         }
         else
         {

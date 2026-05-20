@@ -13,11 +13,12 @@ public class DialogueController2 : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<DialogueController2>();
-                if (instance == null)
-                {
-                    Debug.LogError("DialogueController2 instance not found in scene!");
-                }
+                return null;
+                // instance = FindObjectOfType<DialogueController2>();
+                // if (instance == null)
+                // {
+                //     Debug.Log("DialogueController2 instance not found in scene!");
+                // }
             }
             return instance;
         }

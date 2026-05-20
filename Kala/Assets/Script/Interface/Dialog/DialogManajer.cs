@@ -9,6 +9,7 @@ public class DialogManager : MonoBehaviour
 
     public GameObject dialoguePanel;
     public Text dialogueText;
+    public TMP_Text characterName;
     public Image characterImage;
     public GameObject continueButton;
     public GameObject choiceButtonPrefab; //ini pake prefab buat pilihan
@@ -20,6 +21,7 @@ public class DialogManager : MonoBehaviour
 
     private string[] currentDialogs;
     private Sprite[] currentSprites;
+    private string[] currentCharacterName;
     private int currentIndex;
     private bool isDialogActive;
     private Coroutine typingCoroutine;
@@ -161,13 +163,14 @@ public class DialogManager : MonoBehaviour
     }
 
     // ========== DIALOG LINEAR (ARRAY) ==========
-    public void StartDialog(string[] dialogs, Sprite[] sprites)
+    public void StartDialog(string[] dialogs, Sprite[] sprites, string[] characterNames = null)
     {
         if (isDialogActive)
             EndDialog();
 
         currentDialogs = dialogs;
         currentSprites = sprites;
+        currentCharacterName = characterNames;
         currentIndex = 0;
         isChoiceMode = false;
         dialoguePanel.SetActive(true);
@@ -175,6 +178,9 @@ public class DialogManager : MonoBehaviour
 
         if (currentSprites != null && currentSprites.Length > 0)
             characterImage.sprite = currentSprites[0];
+
+        if (characterName != null && currentCharacterName != null && currentCharacterName.Length > 0)
+            characterName.text = currentCharacterName[0];
 
         ShowText();
     }
@@ -226,6 +232,10 @@ public class DialogManager : MonoBehaviour
                 currentIndex++;
                 if (currentSprites != null && currentIndex < currentSprites.Length)
                     characterImage.sprite = currentSprites[currentIndex];
+
+                if (currentCharacterName != null && currentIndex < currentCharacterName.Length)
+                    characterName.text = currentCharacterName[currentIndex];
+
                 continueButton.SetActive(false);
                 ShowText();
             }

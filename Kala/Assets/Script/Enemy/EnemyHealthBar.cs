@@ -16,6 +16,9 @@ public class EnemyHealthBar : MonoBehaviour
     {
         // Counteract parent X flip — health bar sentiasa hadap depan
         float worldScaleX = transform.parent.lossyScale.x;
+        
+        worldScaleX = (GetComponent<BossHealth>() != null) ? transform.lossyScale.x: worldScaleX; 
+
         transform.localScale = new Vector3(
             worldScaleX < 0 ? -initLocalScale.x : initLocalScale.x,
             initLocalScale.y,

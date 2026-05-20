@@ -6772,6 +6772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 2024531152}
   dialogueText: {fileID: 2024531151}
+  characterName: {fileID: 0}
   characterImage: {fileID: 2024531150}
   continueButton: {fileID: 2024531149}
   choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
@@ -6791,6 +6792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogSequence:
   - isArray: 1
+    characterNames: []
     dialogArray:
     - Woi
     - Kau Hytam
@@ -6801,12 +6803,14 @@ MonoBehaviour:
     - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
     dialogNode: {fileID: 0}
   - isArray: 0
+    characterNames: []
     dialogArray:
     - Intinya KAU HYTAM, TITIK
     spriteArray:
     - {fileID: 21300000, guid: 64cf7eb0f4722b449b3b0811a4fe9329, type: 3}
     dialogNode: {fileID: 11400000, guid: fef9089171ef8814ab4b486759b3bbee, type: 2}
   - isArray: 0
+    characterNames: []
     dialogArray: []
     spriteArray: []
     dialogNode: {fileID: 0}
@@ -6814,6 +6818,7 @@ MonoBehaviour:
   - Ngapa gak terima?
   repeatSprites:
   - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
+  repeatCharacterNames: []
 --- !u!61 &345572105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11902,6 +11907,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &908218591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908218592}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908218592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908218591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &908229284
 GameObject:
   m_ObjectHideFlags: 0
@@ -12382,9 +12418,12 @@ GameObject:
   m_Component:
   - component: {fileID: 954204017}
   - component: {fileID: 954204016}
-  m_Layer: 0
+  - component: {fileID: 954204020}
+  - component: {fileID: 954204019}
+  - component: {fileID: 954204018}
+  m_Layer: 11
   m_Name: Spica
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12456,6 +12495,113 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1917080968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &954204018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954204015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500980f388967e64ba84dc3d12192036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 2024531152}
+  dialogueText: {fileID: 2024531151}
+  characterName: {fileID: 1620039777}
+  characterImage: {fileID: 2024531150}
+  continueButton: {fileID: 2024531149}
+  choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
+  choiceButtonsParent: {fileID: 2024531148}
+  wordSpeed: 0.05
+--- !u!114 &954204019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954204015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1906de3758af5314188c61eb22a1654d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogSequence:
+  - isArray: 1
+    characterNames:
+    - Spica
+    - Spica
+    - Froura
+    - Spica
+    - Spica
+    - Froura
+    - Spica
+    - Ellias
+    - Spica
+    dialogArray:
+    - Selamat datang di atma sanctum kota Cahaya.
+    - 'Kamu tampak asing, Kamu siapa? '
+    - 'Spica lama tak bertemu '
+    - Widyadari agung!
+    - Apa yang membawa mu kemari
+    - kau tahukan? ... retak, aku bersama pengembara ini mencari nocturn yang masuk
+    - ah pantas saja banyak sekali solburn yang menghilang, tolong selamatkan kami
+      widyadari!
+    - 'apa kamu bisa menjelaskan lebih lanjut? '
+    - 'aku tahu ada yang hilang tapi  hanya kabar burung saja, coba bicara pada sargas! '
+    spriteArray:
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - {fileID: 21300000, guid: 1f1690deef9ff4acc844bd41d332d9b1, type: 3}
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - {fileID: 21300000, guid: 1f1690deef9ff4acc844bd41d332d9b1, type: 3}
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - {fileID: 21300000, guid: 4340fd50cd81844d8815869d185c3512, type: 3}
+    - {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    dialogNode: {fileID: 0}
+  repeatDialogs:
+  - 'aku tahu ada yang hilang tapi  hanya kabar burung saja, coba bicara pada sargas! '
+  repeatSprites:
+  - {fileID: 1853680272, guid: 7090d29042c69fc4cb538bb67c9d8c1b, type: 3}
+  repeatCharacterNames:
+  - Spica
+--- !u!70 &954204020
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954204015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.18}
+  m_Size: {x: 0.29, y: 0.7}
+  m_Direction: 0
 --- !u!95 &975666955
 Animator:
   serializedVersion: 5
@@ -14507,7 +14653,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 1
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -14773,8 +14919,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 50
-      minScalar: 20
+      scalar: 100
+      minScalar: 50
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -19839,7 +19985,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 1
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -20105,8 +20251,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 50
-      minScalar: 20
+      scalar: 100
+      minScalar: 50
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -24006,6 +24152,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windStrength: 1
   windCycleSpeed: 0.1
+--- !u!114 &1620039777 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+  m_PrefabInstance: {fileID: 2024531144}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1653519765
 GameObject:
   m_ObjectHideFlags: 0
@@ -26343,6 +26500,9 @@ GameObject:
   - component: {fileID: 2007171712}
   - component: {fileID: 2007171711}
   - component: {fileID: 2007171710}
+  - component: {fileID: 2007171715}
+  - component: {fileID: 2007171714}
+  - component: {fileID: 2007171713}
   m_Layer: 11
   m_Name: Sargas
   m_TagString: Untagged
@@ -26412,7 +26572,7 @@ SpriteRenderer:
   m_SortingLayerID: -2093257239
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 124269033, guid: ea1897c53380987489ca94fff6d101f7, type: 3}
+  m_Sprite: {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26438,6 +26598,110 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1917080968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007171713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007171709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1906de3758af5314188c61eb22a1654d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogSequence:
+  - isArray: 1
+    characterNames:
+    - Sargas
+    - Froura
+    - Sargas
+    - Ellias
+    - Ellias
+    - Sargas
+    - Sargas
+    dialogArray:
+    - 'Widyadari agung! Apa yang membawa mu kemari? '
+    - apa kamu tahu ada yang hilang belakangan ini?
+    - ya tentu saja, sebenarnya letak nya jauh dengan kota kami dibawah tanah, tapi
+      aku yakin ini ulah nocturn
+    - 'bagaimana kamu tahu? '
+    - 'Apa kamu lihat nocturn '
+    - 'Tentu saja, karena ada bercak kelopak hitam milik nocturn Tidak, tapi ada
+      bercak kelopak hitam milik nocturn '
+    - 'Kalian datang untuk memburu mereka kan, coba lah periksa bawah tanah, mungkin
+      ada sesuatu! '
+    spriteArray:
+    - {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
+    - {fileID: 21300000, guid: 1f1690deef9ff4acc844bd41d332d9b1, type: 3}
+    - {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
+    - {fileID: 21300000, guid: 4340fd50cd81844d8815869d185c3512, type: 3}
+    - {fileID: 21300000, guid: 4340fd50cd81844d8815869d185c3512, type: 3}
+    - {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
+    - {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
+    dialogNode: {fileID: 0}
+  repeatDialogs:
+  - 'Kalian datang untuk memburu mereka kan, coba lah periksa bawah tanah, mungkin
+    ada sesuatu! '
+  repeatSprites:
+  - {fileID: 124269033, guid: 09b250221aaf34224bbd84f76907684c, type: 3}
+  repeatCharacterNames:
+  - Sargas
+--- !u!114 &2007171714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007171709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500980f388967e64ba84dc3d12192036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 2024531152}
+  dialogueText: {fileID: 2024531151}
+  characterName: {fileID: 1620039777}
+  characterImage: {fileID: 2024531150}
+  continueButton: {fileID: 2024531149}
+  choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
+  choiceButtonsParent: {fileID: 2024531148}
+  wordSpeed: 0.05
+--- !u!70 &2007171715
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007171709}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.4, y: 0.9375}
+  m_Direction: 0
 --- !u!1 &2019237283
 GameObject:
   m_ObjectHideFlags: 0
@@ -26530,6 +26794,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1853680272, guid: f5dfb34f2c10048b6b23b05f3b39a1b1, type: 3}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282624957951268368, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 1506939234518759712, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -26610,6 +26906,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2118884509821010615, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2517958300653080359, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -26618,10 +26918,66 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 282178491}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: 2194
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252567839444740767, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3786231341980768679, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 345572103}
+    - target: {fileID: 4869531912024621012, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869531912024621012, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869531912024621012, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869531912024621012, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5241585734477278119, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -26630,9 +26986,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7105405976783425372, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 352
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105405976783425372, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105405976783425372, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 163
+      objectReference: {fileID: 0}
     - target: {fileID: 7660041384614249164, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105326418089499439, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1305.433
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105326418089499439, guid: 2bd54f8ee2a5b974d8bada7117ca9daa, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 169.9211
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -27580,6 +27956,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 908218592}
   - {fileID: 698348288}
   - {fileID: 340018425}
   - {fileID: 312564976}

@@ -20,6 +20,13 @@ public class EnemyHealth : Health
             healthBar.SetHealth(currentHp);
     }
 
+    public override void ResetHealth()
+    {
+        currentHp = maxHp;
+        if (healthBar != null)
+            healthBar.SetHealth(currentHp);
+    }
+
     protected override void OnDeath()
     {
         EnemyPatrol patrol = GetComponentInParent<EnemyPatrol>();
