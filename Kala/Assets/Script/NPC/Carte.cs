@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Carte : MonoBehaviour
+public class Carte : MonoBehaviour, IInteractable
 {
     // Daftar urutan dialog (isi di Inspector)
     public List<DialogEntry> dialogSequence;
@@ -16,6 +16,8 @@ public class Carte : MonoBehaviour
     private bool playerIsClose;
     private bool hasTalked = false;
 
+    [SerializeField] private bool isDirectlyInteract = false;
+
     [System.Serializable]
     public struct DialogEntry
     {
@@ -25,6 +27,37 @@ public class Carte : MonoBehaviour
         public Sprite[] spriteArray;    // isi jika isArray = true
         public DialogNode dialogNode;   // isi jika isArray = false
     }
+
+    
+    public bool Caninteract()
+    {
+        return true;
+    }
+
+    public bool CanDirectInteract()
+    {
+        return isDirectlyInteract;
+    }
+
+    public void Interact()
+    {
+        if (DialogManager.Instance != null && DialogManager.Instance.IsDialogActive)
+            return;
+
+        if (!hasTalked)
+        {
+            // Mulai dari step 0
+            currentStep = 0;
+            hasTalked = true;
+            PlayCurrentDialog();
+        }
+        else
+        {
+            // Sudah pernah bicara: gunakan dialog ulang
+            DialogManager.Instance.StartDialog(repeatDialogs, repeatSprites, repeatCharacterNames);
+        }
+    }
+
 
     private void OnEnable()
     {
@@ -52,21 +85,7 @@ public class Carte : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && playerIsClose)
         {
-            if (DialogManager.Instance != null && DialogManager.Instance.IsDialogActive)
-                return;
-
-            if (!hasTalked)
-            {
-                // Mulai dari step 0
-                currentStep = 0;
-                hasTalked = true;
-                PlayCurrentDialog();
-            }
-            else
-            {
-                // Sudah pernah bicara: gunakan dialog ulang
-                DialogManager.Instance.StartDialog(repeatDialogs, repeatSprites, repeatCharacterNames);
-            }
+            Interact();
         }
     }
 
@@ -98,6 +117,8 @@ public class Carte : MonoBehaviour
     {
         Debug.Log("OnDialogEnded di Carte, hasTalked=" + hasTalked + ", currentStep=" + currentStep);
         if (!hasTalked) return;
+        if (isDirectlyInteract) this.gameObject.SetActive(false); // Nonaktifkan jika langsung berinteraksi
+        
         if (currentStep >= 0 && currentStep < dialogSequence.Count - 1)
         {
             currentStep++;
@@ -109,6 +130,8 @@ public class Carte : MonoBehaviour
             Debug.Log("Sequence selesai");
             currentStep = -1; // Tandai sequence sudah selesai
         }
+
+
     }
 
     // Trigger detection

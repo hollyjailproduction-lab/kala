@@ -26,6 +26,7 @@ public class DialogueController2 : MonoBehaviour
     }
 
     public GameObject dialoguePanel;
+    // public Text dialogueText;
     public TMP_Text dialogueText;
     public TMP_Text NPCName;
     public Image NPCPic;
@@ -68,6 +69,7 @@ public class DialogueController2 : MonoBehaviour
     {
         if (dialogueText != null)
             dialogueText.SetText(text);
+            // dialogueText.text = text;
         else
             Debug.LogError("DialogueText is null! Please assign in Inspector.");
     }

@@ -8736,6 +8736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 2024531152}
   dialogueText: {fileID: 2024531151}
+  characterName: {fileID: 0}
   characterImage: {fileID: 2024531150}
   continueButton: {fileID: 2024531149}
   choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
@@ -8755,6 +8756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogSequence:
   - isArray: 1
+    characterNames: []
     dialogArray:
     - Woi
     - Kau Hytam
@@ -8765,12 +8767,14 @@ MonoBehaviour:
     - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
     dialogNode: {fileID: 0}
   - isArray: 0
+    characterNames: []
     dialogArray:
     - Intinya KAU HYTAM, TITIK
     spriteArray:
     - {fileID: 21300000, guid: 64cf7eb0f4722b449b3b0811a4fe9329, type: 3}
     dialogNode: {fileID: 11400000, guid: fef9089171ef8814ab4b486759b3bbee, type: 2}
   - isArray: 0
+    characterNames: []
     dialogArray: []
     spriteArray: []
     dialogNode: {fileID: 0}
@@ -8778,6 +8782,8 @@ MonoBehaviour:
   - Ngapa gak terima?
   repeatSprites:
   - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
+  repeatCharacterNames: []
+  isDirectlyInteract: 0
 --- !u!61 &345572105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39144,6 +39150,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1001 &1889153869
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7156933781813042296, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_Name
+      value: FrouraV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
 --- !u!1 &1891614893
 GameObject:
   m_ObjectHideFlags: 0
@@ -43137,6 +43200,7 @@ SceneRoots:
   - {fileID: 1016725724}
   - {fileID: 345572109}
   - {fileID: 1150990625}
+  - {fileID: 1889153869}
   - {fileID: 282178490}
   - {fileID: 1743829887}
   - {fileID: 2024531144}
