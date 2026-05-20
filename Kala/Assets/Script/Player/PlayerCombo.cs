@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerCombo : MonoBehaviour
 {
@@ -8,31 +9,32 @@ public class PlayerCombo : MonoBehaviour
     public Transform attackPoint;
 
     private Animator anim;
+    private PlayerMovement playerMovement;
     private int currentAttack = 0;
     private float lastAttackTime;
     private bool isAttacking = false;
-    private bool pendingInput = false;  // buffer input selama animasi
+    private bool pendingInput = false;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
-    void Update()
+    // gamepad buttonWest / mouse klik kiri
+    public void OnAttack(InputAction.CallbackContext context)
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!context.performed) return;
+        if (playerMovement != null && !playerMovement.canAttack()) return;
+
+        if (!isAttacking)
         {
-            if (!isAttacking)
-            {
-                // Mulai kombo baru
-                currentAttack = 1;
-                ExecuteAttack();
-            }
-            else if (currentAttack < 3)
-            {
-                // Buffer input untuk kombo berikutnya
-                pendingInput = true;
-            }
+            currentAttack = 1;
+            ExecuteAttack();
+        }
+        else if (currentAttack < 3)
+        {
+            pendingInput = true;
         }
     }
 

@@ -549,6 +549,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7a5018f8-26e1-428e-8a84-ba4f9119d8c8
     m_ActionName: Player/Slide[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5023235741670217959}
+        m_TargetAssemblyTypeName: PlayerCombo, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f92a2d47-c80a-4c25-a1a8-e95f02b11d5e
+    m_ActionName: Player/Attack[/DualShock4GamepadHID/buttonWest,/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

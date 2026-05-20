@@ -12863,6 +12863,38 @@ PrefabInstance:
       propertyPath: inventoryUI
       value: 
       objectReference: {fileID: 2024531146}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
+      value: f92a2d47-c80a-4c25-a1a8-e95f02b11d5e
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
+      value: Player/Attack[/DualShock4GamepadHID/buttonWest,/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1150990627}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4811410099097533881, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnAttack
+      objectReference: {fileID: 0}
     - target: {fileID: 5757832322698828857, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -12933,6 +12965,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
   m_PrefabInstance: {fileID: 1150990625}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1150990627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5023235741670217959, guid: 3c492de6daace09418b52b4041721382, type: 3}
+  m_PrefabInstance: {fileID: 1150990625}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d225023a472c84d9c8b7c6e49cacdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1162043257
 GameObject:
   m_ObjectHideFlags: 0
