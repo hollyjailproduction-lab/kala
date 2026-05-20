@@ -1,12 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerCombo : MonoBehaviour
 {
     public float comboWindow = 0.4f;
     public int[] damage = { 10, 15, 20 };
     public LayerMask enemyLayer;
     public Transform attackPoint;
+
+    private static readonly int[] AttackHashes =
+    {
+        Animator.StringToHash("Attack1"),
+        Animator.StringToHash("Attack2"),
+        Animator.StringToHash("Attack3"),
+    };
 
     private Animator anim;
     private PlayerMovement playerMovement;
@@ -18,7 +26,7 @@ public class PlayerCombo : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovement>();
+        TryGetComponent(out playerMovement);
     }
 
     // gamepad buttonWest / mouse klik kiri
@@ -26,6 +34,14 @@ public class PlayerCombo : MonoBehaviour
     {
         if (!context.performed) return;
         if (playerMovement != null && !playerMovement.canAttack()) return;
+
+        // Reset state
+        if (isAttacking && Time.time - lastAttackTime > comboWindow)
+        {
+            isAttacking = false;
+            currentAttack = 0;
+            pendingInput = false;
+        }
 
         if (!isAttacking)
         {
@@ -40,7 +56,7 @@ public class PlayerCombo : MonoBehaviour
 
     void ExecuteAttack()
     {
-        anim.SetTrigger($"Attack{currentAttack}");
+        anim.SetTrigger(AttackHashes[currentAttack - 1]);
         lastAttackTime = Time.time;
         isAttacking = true;
         pendingInput = false;
@@ -73,8 +89,8 @@ public class PlayerCombo : MonoBehaviour
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, 1.2f, enemyLayer);
         foreach (var hit in hits)
         {
-            Health health = hit.GetComponent<Health>();
-            if (health != null) health.TakeDamage(dmg, DamageSource.Player);
+            if (hit.TryGetComponent(out Health health))
+                health.TakeDamage(dmg, DamageSource.Player);
         }
     }
 
@@ -83,6 +99,13 @@ public class PlayerCombo : MonoBehaviour
         isAttacking = false;
         pendingInput = false;
         currentAttack = 0;
+
+        if (anim != null)
+        {
+            foreach (int hash in AttackHashes)
+                anim.ResetTrigger(hash);
+        }
+
         Debug.Log("Attack cancelled due to damage");
     }
 }

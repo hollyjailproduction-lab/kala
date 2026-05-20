@@ -36,6 +36,13 @@ public class FrouraV2 : MonoBehaviour
     [Tooltip("Interval heal dalam detik")]
     [SerializeField] [Min(0.1f)] private float healInterval = 2f;
 
+    [Header("Heal Particles")]
+    [SerializeField] private ParticleSystem healParticle;
+    [Tooltip("Jumlah partikel")]
+    [SerializeField] [Range(1, 30)] private int emitCount = 8;
+    [Tooltip("Kecepatan partikel")]
+    [SerializeField] [Range(1f, 20f)] private float particleAttractSpeed = 6f;
+
     [Header("Debug")]
     [SerializeField] private bool showGizmos = true;
 
@@ -44,6 +51,7 @@ public class FrouraV2 : MonoBehaviour
     private Vector2 smoothVelocity = Vector2.zero;
     private PlayerHealth playerHealth;
     private float healTimer;
+    private ParticleSystem.Particle[] particleBuffer = new ParticleSystem.Particle[64];
 
     private void Awake()
     {
@@ -65,6 +73,14 @@ public class FrouraV2 : MonoBehaviour
     {
         if (target != null)
             playerHealth = target.GetComponent<PlayerHealth>();
+
+        if (healParticle != null)
+        {
+            var main = healParticle.main;
+            main.simulationSpace = ParticleSystemSimulationSpace.World;
+            // Jangan paksa loop = false — sistem harus tetap playing agar Emit() selalu jalan
+            healParticle.Play();
+        }
     }
 
     private void FixedUpdate()
@@ -83,14 +99,16 @@ public class FrouraV2 : MonoBehaviour
 
     private void Update()
     {
-        if (!autoFlip || spriteRenderer == null) return;
-
-        if (smoothVelocity.x > 0.05f)
-            spriteRenderer.flipX = invertFlip;
-        else if (smoothVelocity.x < -0.05f)
-            spriteRenderer.flipX = !invertFlip;
+        if (autoFlip && spriteRenderer != null)
+        {
+            if (smoothVelocity.x > 0.05f)
+                spriteRenderer.flipX = invertFlip;
+            else if (smoothVelocity.x < -0.05f)
+                spriteRenderer.flipX = !invertFlip;
+        }
 
         HandleAutoHeal();
+        AttractHealParticles();
     }
 
     private void HandleAutoHeal()
@@ -114,6 +132,34 @@ public class FrouraV2 : MonoBehaviour
 
         if (GameManager.instance != null)
             GameManager.instance.playerCurrentHealth = playerHealth.currentHp;
+
+        if (healParticle != null)
+        {
+            healParticle.transform.position = transform.position;
+            if (!healParticle.isPlaying)
+                healParticle.Play();
+            healParticle.Emit(emitCount);
+        }
+    }
+
+    private void AttractHealParticles()
+    {
+        if (healParticle == null || target == null || healParticle.particleCount == 0) return;
+
+        int count = healParticle.particleCount;
+        if (particleBuffer.Length < count)
+            particleBuffer = new ParticleSystem.Particle[count * 2];
+
+        int num = healParticle.GetParticles(particleBuffer);
+        Vector3 targetPos = target.position;
+
+        for (int i = 0; i < num; i++)
+        {
+            Vector3 dir = (targetPos - particleBuffer[i].position).normalized;
+            particleBuffer[i].velocity = dir * particleAttractSpeed;
+        }
+
+        healParticle.SetParticles(particleBuffer, num);
     }
 
     private void OnDrawGizmosSelected()

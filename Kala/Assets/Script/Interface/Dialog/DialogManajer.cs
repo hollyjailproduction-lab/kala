@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
 
@@ -28,6 +29,7 @@ public class DialogManager : MonoBehaviour
 
     private DialogNode currentNode;
     private bool isChoiceMode;
+    private InputAction dialogAction;
 
     public bool IsDialogActive => isDialogActive;
 
@@ -44,30 +46,31 @@ public class DialogManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         if (choiceButtonsParent != null)
             choiceButtonsParent.gameObject.SetActive(false);
+
+        PlayerInput playerInput = FindAnyObjectByType<PlayerInput>();
+        if (playerInput != null)
+        {
+            dialogAction = playerInput.actions["Player/Dialog"];
+            if (dialogAction != null)
+                dialogAction.performed += OnDialog;
+        }
     }
 
-    void Update()
+    void OnDestroy()
     {
-        if (!isDialogActive) return;
+        if (dialogAction != null)
+            dialogAction.performed -= OnDialog;
+    }
 
-        // Dalam mode pilihan, tidak perlu input dari keyboard/mouse
-        if (isChoiceMode) return;
+    // Keyboard: Space / Mouse klik kiri | Gamepad: buttonSouth (A/Cross)
+    public void OnDialog(InputAction.CallbackContext context)
+    {
+        if (!isDialogActive || isChoiceMode) return;
 
-        // Mode typing
         if (typingCoroutine != null)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-            {
-                SkipTyping();
-            }
-        }
+            SkipTyping();
         else if (continueButton.activeSelf)
-        {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-            {
-                NextLine();
-            }
-        }
+            NextLine();
     }
 
     // ========== DIALOG TREE (NODE) ==========
