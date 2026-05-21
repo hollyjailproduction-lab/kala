@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossRun : StateMachineBehaviour
 {
     public float speed = 1f;
+    public float targetOffsetX = 2.5f;      // jarak berhenti dari player saat mengejar (sumbu X)
     public float closeAttackRange = 2f;   // jarak untuk serangan dekat (Attack1/Attack2 random)
     public float longAttackRange = 5f;    // jarak maksimum serangan jauh (Attack2)
     private Vector2 startPosition;
@@ -42,17 +43,18 @@ public class BossRun : StateMachineBehaviour
             rb.MovePosition(returnPos);
             if (Vector2.Distance(rb.position, startPosition) <= 0.1f)
             {
-                animator.SetBool("isIdle", true);
+                // animator.SetBool("isIdle", true);
                 boss.ResetBossHealth();
             }
             return;
         }
 
-        // Gerak mengejar player (kecuali saat serangan jarak jauh? biarkan tetap bergerak)
-        Vector2 target = new Vector2(player.position.x, rb.position.y);
+        // Gerak mengejar player dengan offset X agar berhenti di jarak serangan
+        float dirX = rb.position.x < player.position.x ? -1f : 1f;
+        Vector2 target = new Vector2(player.position.x + dirX * targetOffsetX, rb.position.y);
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
-        animator.SetBool("isIdle", false);
+        // animator.SetBool("isIdle", false);
 
         float distance = Vector2.Distance(player.position, rb.position);
         

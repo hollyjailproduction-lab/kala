@@ -13,11 +13,12 @@ public class DialogueController2 : MonoBehaviour
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<DialogueController2>();
-                if (instance == null)
-                {
-                    Debug.LogError("DialogueController2 instance not found in scene!");
-                }
+                return null;
+                // instance = FindObjectOfType<DialogueController2>();
+                // if (instance == null)
+                // {
+                //     Debug.Log("DialogueController2 instance not found in scene!");
+                // }
             }
             return instance;
         }
@@ -25,6 +26,7 @@ public class DialogueController2 : MonoBehaviour
     }
 
     public GameObject dialoguePanel;
+    // public Text dialogueText;
     public TMP_Text dialogueText;
     public TMP_Text NPCName;
     public Image NPCPic;
@@ -67,6 +69,7 @@ public class DialogueController2 : MonoBehaviour
     {
         if (dialogueText != null)
             dialogueText.SetText(text);
+            // dialogueText.text = text;
         else
             Debug.LogError("DialogueText is null! Please assign in Inspector.");
     }
