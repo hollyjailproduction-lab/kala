@@ -290,7 +290,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 338373589
-  m_SortingLayer: 3
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2087473630, guid: 92f26d20f9c7e5244bd8c968c61c3a8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -335,8 +335,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2791291, y: -0.18383181}
-  m_Size: {x: 0.29718027, y: 0.63233656}
+  m_Offset: {x: 0.010360718, y: -0.18383181}
+  m_Size: {x: 0.305571, y: 0.63233656}
   m_Direction: 0
 --- !u!50 &7421047792117207320
 Rigidbody2D:
@@ -385,6 +385,8 @@ MonoBehaviour:
     m_Bits: 128
   speed: 3
   jumpForce: 5
+  slideDuration: 0.4
+  slideSpeedMultiplier: 1.8
 --- !u!95 &2475393792463432191
 Animator:
   serializedVersion: 5
@@ -563,6 +565,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9a6e40a5-b639-4641-9117-7a2d7b881011
     m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7a5018f8-26e1-428e-8a84-ba4f9119d8c8
+    m_ActionName: Player/Slide[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f92a2d47-c80a-4c25-a1a8-e95f02b11d5e
+    m_ActionName: Player/Attack[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 56c3ad8f-25f7-460e-9223-9699f00fc3e0
+    m_ActionName: Player/Dialog[/Keyboard/space,/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -639,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 8347126617423432285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.307, y: -0.019, z: 0}
+  m_LocalPosition: {x: 0.007, y: -0.006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
