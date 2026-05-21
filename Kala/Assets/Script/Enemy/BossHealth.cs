@@ -29,6 +29,7 @@ public class BossHealth : EnemyHealth
         if (!isPhase2 && currentHp <= phase2Threshold)
         {
             isPhase2 = true;
+            currentHp = maxHp;
             GetComponent<Animator>().SetBool("IsEnraged", true);
         }
         //Debug.Log($"Boss HP: {currentHp}, threshold: {phase2Threshold}");
