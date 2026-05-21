@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Area/MainMenu/MainMenu.unity
     guid: c8099126a832043eb91a103af6b68fea
   - enabled: 1
+    path: Assets/Area/CutScene/CutSceneNewGame.unity
+    guid: a2f758e5c3b7b6047b0844a43aaf5140
+  - enabled: 1
     path: Assets/Area/Map 1/Stage_1-1.unity
     guid: 6daf1fc8c90204968828ccfa60301f55
   - enabled: 1

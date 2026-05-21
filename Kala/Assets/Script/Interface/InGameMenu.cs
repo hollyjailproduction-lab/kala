@@ -34,6 +34,13 @@ public class InGameMenu : MonoBehaviour
 
     private void FindReferences()
     {
+        // Jika sedang di scene MainMenu, tidak perlu mencari menuPanel atau inventoryPage
+        if (SceneManager.GetActiveScene().name == mainMenuSceneName)
+        {
+            Debug.Log("InGameMenu: di MainMenu, skip mencari references.");
+            return;
+        }
+
         if (inventoryPage == null)
             inventoryPage = FindObjectOfType<InventoryPage>();
 
@@ -49,20 +56,19 @@ public class InGameMenu : MonoBehaviour
                     break;
                 }
             }
-            if (menuPanel == null)
-                menuPanel = GameObject.FindGameObjectWithTag("MenuPanel");
+            // Hapus baris yang menggunakan tag (karena belum terdaftar)
+            // if (menuPanel == null) menuPanel = GameObject.FindGameObjectWithTag("MenuPanel");
             
             if (menuPanel == null)
                 Debug.LogError($"MenuPanel tidak ditemukan di scene {SceneManager.GetActiveScene().name}!");
             else
             {
                 Debug.Log($"MenuPanel ditemukan di scene {SceneManager.GetActiveScene().name}");
-                SetupMenuPanelButtons(); // <-- Pasang listener ulang
+                SetupMenuPanelButtons();
             }
         }
         else
         {
-            // Jika menuPanel sudah ada, tetap pasang listener ulang (misal jika panel diganti)
             SetupMenuPanelButtons();
         }
     }
@@ -154,6 +160,7 @@ public class InGameMenu : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        Debug.Log("GoToMainMenu dipanggil, memuat scene: " + mainMenuSceneName);
         PauseController.SetPause(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(mainMenuSceneName);
