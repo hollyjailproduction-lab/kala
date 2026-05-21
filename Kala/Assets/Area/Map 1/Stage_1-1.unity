@@ -700,11 +700,11 @@ MonoBehaviour:
   dialogSequence:
   - isArray: 1
     characterNames:
-    - Ellias
+    - 113
     - Froura
-    - Ellias
+    - 113
     - Froura
-    - Ellias
+    - 113
     - Froura
     dialogArray:
     - Tempat apa ini?
@@ -12766,7 +12766,7 @@ MonoBehaviour:
     - Spica
     - Froura
     - Spica
-    - Ellias
+    - 113
     - Spica
     dialogArray:
     - Selamat datang di atma sanctum kota Cahaya.
@@ -37558,8 +37558,8 @@ MonoBehaviour:
     - Sargas
     - Froura
     - Sargas
-    - Ellias
-    - Ellias
+    - 113
+    - 113
     - Sargas
     - Sargas
     dialogArray:
