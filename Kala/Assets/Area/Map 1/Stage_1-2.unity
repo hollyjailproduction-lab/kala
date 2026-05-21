@@ -28732,8 +28732,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
-      maxColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+      minColor: {r: 0.9324542, g: 0.44968545, b: 1, a: 1}
+      maxColor: {r: 0.9647614, g: 0.70754707, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -33804,8 +33804,8 @@ MonoBehaviour:
     - ini kelopak hitam nocturn
     - ' seperti nya ada nocturn disini, hati hati!'
     spriteArray:
-    - {fileID: 21300000, guid: 1f1690deef9ff4acc844bd41d332d9b1, type: 3}
-    - {fileID: 21300000, guid: 1f1690deef9ff4acc844bd41d332d9b1, type: 3}
+    - {fileID: 592696382, guid: 817a2ec6ad51b7c428b95767b2582b16, type: 3}
+    - {fileID: 592696382, guid: 817a2ec6ad51b7c428b95767b2582b16, type: 3}
     dialogNode: {fileID: 0}
   repeatDialogs: []
   repeatSprites: []
@@ -34983,8 +34983,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
-      maxColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+      minColor: {r: 0.9042337, g: 0.39308167, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.63207537, b: 0.9820081, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

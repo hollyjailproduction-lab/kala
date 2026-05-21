@@ -5,7 +5,11 @@ public class MainMenu : MonoBehaviour
 {
     public void PlaySampleScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Reset flag tutorial untuk New Game
+        PlayerPrefs.DeleteKey("TutorialShown");
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene("CutSceneNewGame");
     }
 
     public void ContinueGame()
