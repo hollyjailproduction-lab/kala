@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -669.8986, y: 163}
-  m_SizeDelta: {x: 352, y: 704}
+  m_AnchoredPosition: {x: -500.93887, y: -39.25772}
+  m_SizeDelta: {x: 387.8709, y: 300.3947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9218107751948243777
 CanvasRenderer:
@@ -259,8 +259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169.9211, y: 149}
-  m_SizeDelta: {x: 1305.433, y: 48}
+  m_AnchoredPosition: {x: -18, y: 200.05}
+  m_SizeDelta: {x: 1305.433, y: 87.898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2871893713059333225
 CanvasRenderer:
@@ -292,8 +292,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wong Ireng
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba1ff714503f34fe7a1150a6cd55cae4, type: 2}
+  m_sharedMaterial: {fileID: 9119134484721650212, guid: ba1ff714503f34fe7a1150a6cd55cae4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -317,8 +317,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -454,8 +454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: -200.00003, y: -700}
+  m_AnchoredPosition: {x: 29.866577, y: -221.2785}
+  m_SizeDelta: {x: -416.5331, y: -493.2231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &212280564932277983
 CanvasRenderer:
@@ -478,15 +478,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1093350692, guid: 81ee892ddbe595d47b1513c81203ed14, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -531,7 +531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 699.3467, y: -126.34567}
+  m_AnchoredPosition: {x: 576, y: -172}
   m_SizeDelta: {x: 246.5868, y: 61.9287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4088003638632688557
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1211,8 +1211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169.9211, y: 5.7712}
-  m_SizeDelta: {x: 1305.4333, y: 172.4562}
+  m_AnchoredPosition: {x: 206.81, y: -19.554708}
+  m_SizeDelta: {x: 984.96, y: 223.108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1602616114261388848
 CanvasRenderer:
@@ -1235,7 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.2509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7aef630fc89ef42d1b5974a76e4ad9ff, type: 3}
     m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0

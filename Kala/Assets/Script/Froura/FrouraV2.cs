@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class FrouraV2 : MonoBehaviour
 {
     [Header("Target")]
@@ -52,6 +52,7 @@ public class FrouraV2 : MonoBehaviour
     private PlayerHealth playerHealth;
     private float healTimer;
     private ParticleSystem.Particle[] particleBuffer = new ParticleSystem.Particle[64];
+    private Animator animator;
 
     private void Awake()
     {
@@ -67,6 +68,8 @@ public class FrouraV2 : MonoBehaviour
             col.isTrigger = true;
 
         TryGetComponent(out spriteRenderer);
+
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -109,6 +112,9 @@ public class FrouraV2 : MonoBehaviour
 
         HandleAutoHeal();
         AttractHealParticles();
+
+        bool isMoving = smoothVelocity.magnitude > 0.05f;
+        animator.SetBool("isMoving", isMoving);
     }
 
     private void HandleAutoHeal()

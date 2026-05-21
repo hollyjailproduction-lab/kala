@@ -333,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogSequence:
   - isArray: 1
+    characterNames: []
     dialogArray:
     - Woi
     - Kau Hytam
@@ -343,12 +344,14 @@ MonoBehaviour:
     - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
     dialogNode: {fileID: 0}
   - isArray: 0
+    characterNames: []
     dialogArray:
     - Intinya KAU HYTAM, TITIK
     spriteArray:
     - {fileID: 21300000, guid: 64cf7eb0f4722b449b3b0811a4fe9329, type: 3}
     dialogNode: {fileID: 11400000, guid: fef9089171ef8814ab4b486759b3bbee, type: 2}
   - isArray: 0
+    characterNames: []
     dialogArray: []
     spriteArray: []
     dialogNode: {fileID: 0}
@@ -356,6 +359,8 @@ MonoBehaviour:
   - Ngapa gak terima?
   repeatSprites:
   - {fileID: 21300000, guid: feda620ef8f22624e822ec14e8d2d888, type: 3}
+  repeatCharacterNames: []
+  isDirectlyInteract: 0
 --- !u!95 &109640352
 Animator:
   serializedVersion: 5
@@ -436,6 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 808566773}
   dialogueText: {fileID: 652859326}
+  characterName: {fileID: 0}
   characterImage: {fileID: 1986325832}
   continueButton: {fileID: 719854979}
   choiceButtonPrefab: {fileID: 4988654996362154350, guid: 114b175c2c51440488d8942e5df704d0, type: 3}
@@ -697,6 +703,9 @@ MonoBehaviour:
   startPoint: {fileID: 998015903}
   exitDirection: {x: -1, y: 0}
   exitTime: 0.25
+  requiredEnemies: []
+  activeParticle: {fileID: 0}
+  lockedParticle: {fileID: 0}
 --- !u!61 &377173759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7129,6 +7138,7 @@ MonoBehaviour:
   maxHp: 100
   currentHp: 100
   deathEffect: {fileID: 0}
+  healthBar: {fileID: 0}
   isInvulnerable: 0
   phase2Threshold: 90
 --- !u!1 &2096985670
@@ -7178,13 +7188,17 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6219800855250516294, guid: fd4fe0a8f3f4b334789aaf58921d42e5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6665014766764140494, guid: fd4fe0a8f3f4b334789aaf58921d42e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.491599
       objectReference: {fileID: 0}
     - target: {fileID: 6665014766764140494, guid: fd4fe0a8f3f4b334789aaf58921d42e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4313679
+      value: 1.478
       objectReference: {fileID: 0}
     - target: {fileID: 6665014766764140494, guid: fd4fe0a8f3f4b334789aaf58921d42e5, type: 3}
       propertyPath: m_LocalPosition.z

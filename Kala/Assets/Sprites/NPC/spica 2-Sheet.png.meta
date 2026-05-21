@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7090d29042c69fc4cb538bb67c9d8c1b
+guid: 21e0dc89f81d8074b972148b17010e72
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,511 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpicaIdle_0
+      name: spica 2-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e6a8425b795df42beeb69304c4d335
+      internalID: 90308028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a76db187c4388499b50e407ad50a02
+      internalID: -1339059485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241d1f473ffaf854c9d5234c7f3e5e6f
+      internalID: 696255618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2530f9e127b44e94db1646daeff5aecd
+      internalID: 1387806335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4842fd4583e6ae941819226ef1fb3569
+      internalID: 1842316902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e52bb4b16487a4e8c739feb39ae9af
+      internalID: -1926234989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcda8a2379ab274f9d6554091488bc3
+      internalID: -804805634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2ab49760c50cc458959342bc814047
+      internalID: 916334259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b62493254c8443419338c05b95c33c8
+      internalID: -1170234138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca3e1c43695fda4c875cc1cce07d3b5
+      internalID: -395271401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f08f4d4c1118d4ab995f3b6acf3354
+      internalID: -147601599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672f6d3e275c1be4c99eb31dce5daf47
+      internalID: -1165064084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c688bba14962ac1449fef11518eee580
+      internalID: -1998951635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4f95ae85a51e246a94cfa85ffea990
+      internalID: 1197322094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31dce51d4219d24cb7bd7e1e227b96d
+      internalID: 1016129468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 240
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0c47768e9b18b4899bec7ddfb7d422
+      internalID: 577625991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc997e2f7d64da49b805f9ccf5f2814
+      internalID: 739966303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4819057cf8e38240b88991cfc2c3892
+      internalID: 1209809250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492457d72142292428b11646a7146b82
+      internalID: 1430787606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0b72276b3b1f744a42bebf73e3e534
+      internalID: 1129533431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f5943199544b84a9011ebae4e8edb2
+      internalID: -380280571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b69ea3b5e0362d49a52b7140cec8990
+      internalID: -1140970169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ad8d075a60efa4a9efa209e3c72f74
+      internalID: 1339223221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 120
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7575d841c0b0b4d44b30a7678e370c9d
+      internalID: -2029236437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spica 2-Sheet_24
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6394e06b45d69d41a81db1a433fca0b
-      internalID: 1853680272
+      spriteID: 1dd2a358474c4db479089e1e902936bd
+      internalID: -147438765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_1
+      name: spica 2-Sheet_25
       rect:
         serializedVersion: 2
         x: 80
@@ -132,14 +636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8631cb5e9deb2240a9c8583d682b88e
-      internalID: 674268930
+      spriteID: 4c07de6a2255742489eb54a621391212
+      internalID: 2138230940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_2
+      name: spica 2-Sheet_26
       rect:
         serializedVersion: 2
         x: 160
@@ -153,14 +657,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8c2470162ceff2438637f0291baf4e2
-      internalID: -526784082
+      spriteID: f925cbdf64d9b874794c0b56f2081133
+      internalID: -921653727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_3
+      name: spica 2-Sheet_27
       rect:
         serializedVersion: 2
         x: 240
@@ -174,14 +678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb2c9f115ae264429f417129d15d484
-      internalID: -2010241564
+      spriteID: 8919684163e9e374cab6a24e3ed2d710
+      internalID: 2093917745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_4
+      name: spica 2-Sheet_28
       rect:
         serializedVersion: 2
         x: 320
@@ -195,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c34921d6d12ff4840ac55f31dc3d66a3
-      internalID: -186539372
+      spriteID: f5438a589e6cecf4f904c91c2c921aea
+      internalID: -89341621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_5
+      name: spica 2-Sheet_29
       rect:
         serializedVersion: 2
         x: 400
@@ -216,14 +720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa1caefdb5eafb844b5ed84cb786c9e0
-      internalID: 1082966023
+      spriteID: d0a2eef338e3a0141af40a565f58d703
+      internalID: -1734205102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpicaIdle_6
+      name: spica 2-Sheet_30
       rect:
         serializedVersion: 2
         x: 480
@@ -237,512 +741,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e6456ce171fb714ca5dbe666ed8dadc
-      internalID: 2120565203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_7
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c443c647739e29042a571e84a8f95361
-      internalID: -104198813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_8
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b351f16cbd14dd844afaba2ed390ee2d
-      internalID: -323013363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_9
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c4460cae9823f34c8eb5a7f9740f3d2
-      internalID: 410507280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_10
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48779d8975281404bb5b03d387b1e599
-      internalID: -1159508748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_11
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b7f25a1891840a43ab13c1c8c18050a
-      internalID: -1548321076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_12
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7950206a042e8c74eba032f92129f3c8
-      internalID: 1624022927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_13
-      rect:
-        serializedVersion: 2
-        x: 1040
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0690be091fabe454ba5e125cc0aa9dbc
-      internalID: 666692466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_14
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd5247b173894814688f79d4395d2544
-      internalID: -6162567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_15
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e11edaf77b575704cba5cee6ed918519
-      internalID: -82609645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_16
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c10e137020471842aa40d5caad88868
-      internalID: -1806129687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_17
-      rect:
-        serializedVersion: 2
-        x: 1360
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca75783c1d6eb734ba37edeed4621b9f
-      internalID: -2043964297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_18
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac29ed8d9f7c8ec4cbff0767c797b9bf
-      internalID: -471478117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_19
-      rect:
-        serializedVersion: 2
-        x: 1520
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff5fbfe9b0e04ca4b99598c471f3bb55
-      internalID: 1294777136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_20
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cadb8e67f8718e54d965e1a8bbe4a185
-      internalID: -2120549959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_21
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c9a67de3687b47428521784aca3e76e
-      internalID: -143877480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_22
-      rect:
-        serializedVersion: 2
-        x: 1760
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08181702cd159364a86c6d960ca6ff71
-      internalID: -57787858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_23
-      rect:
-        serializedVersion: 2
-        x: 1840
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99e3611e70860f344868cc519c8cadc9
-      internalID: 1076811663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_24
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a15aaa92f60093645ae89799c63f76b9
-      internalID: -1522735776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_25
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d58f1caf1401c6c4d9d4eb2e94ee71a8
-      internalID: 791301896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_26
-      rect:
-        serializedVersion: 2
-        x: 2080
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82404a8084913024cabe6dd017bc687a
-      internalID: -562062963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_27
-      rect:
-        serializedVersion: 2
-        x: 2160
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: deed8e79b84b6da4b9aa11d1d0be4477
-      internalID: 1377259776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_28
-      rect:
-        serializedVersion: 2
-        x: 2240
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db4aefd72c4d514685ff4784bf8bb67
-      internalID: -362140707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_29
-      rect:
-        serializedVersion: 2
-        x: 2320
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b78467175c029347a0feb5a9865d462
-      internalID: -1773511044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpicaIdle_30
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1dbfdfc5cf768d45bed25711cdebe5e
-      internalID: 1923094052
+      spriteID: e176a8d1c875d5d4e8298d17d20d33e4
+      internalID: 527261105
       vertices: []
       indices: 
       edges: []
@@ -758,37 +758,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpicaIdle_0: 1853680272
-      SpicaIdle_1: 674268930
-      SpicaIdle_10: -1159508748
-      SpicaIdle_11: -1548321076
-      SpicaIdle_12: 1624022927
-      SpicaIdle_13: 666692466
-      SpicaIdle_14: -6162567
-      SpicaIdle_15: -82609645
-      SpicaIdle_16: -1806129687
-      SpicaIdle_17: -2043964297
-      SpicaIdle_18: -471478117
-      SpicaIdle_19: 1294777136
-      SpicaIdle_2: -526784082
-      SpicaIdle_20: -2120549959
-      SpicaIdle_21: -143877480
-      SpicaIdle_22: -57787858
-      SpicaIdle_23: 1076811663
-      SpicaIdle_24: -1522735776
-      SpicaIdle_25: 791301896
-      SpicaIdle_26: -562062963
-      SpicaIdle_27: 1377259776
-      SpicaIdle_28: -362140707
-      SpicaIdle_29: -1773511044
-      SpicaIdle_3: -2010241564
-      SpicaIdle_30: 1923094052
-      SpicaIdle_4: -186539372
-      SpicaIdle_5: 1082966023
-      SpicaIdle_6: 2120565203
-      SpicaIdle_7: -104198813
-      SpicaIdle_8: -323013363
-      SpicaIdle_9: 410507280
+      spica 2-Sheet_0: 90308028
+      spica 2-Sheet_1: -1339059485
+      spica 2-Sheet_10: -147601599
+      spica 2-Sheet_11: -1165064084
+      spica 2-Sheet_12: -1998951635
+      spica 2-Sheet_13: 1197322094
+      spica 2-Sheet_14: 1016129468
+      spica 2-Sheet_15: 577625991
+      spica 2-Sheet_16: 739966303
+      spica 2-Sheet_17: 1209809250
+      spica 2-Sheet_18: 1430787606
+      spica 2-Sheet_19: 1129533431
+      spica 2-Sheet_2: 696255618
+      spica 2-Sheet_20: -380280571
+      spica 2-Sheet_21: -1140970169
+      spica 2-Sheet_22: 1339223221
+      spica 2-Sheet_23: -2029236437
+      spica 2-Sheet_24: -147438765
+      spica 2-Sheet_25: 2138230940
+      spica 2-Sheet_26: -921653727
+      spica 2-Sheet_27: 2093917745
+      spica 2-Sheet_28: -89341621
+      spica 2-Sheet_29: -1734205102
+      spica 2-Sheet_3: 1387806335
+      spica 2-Sheet_30: 527261105
+      spica 2-Sheet_4: 1842316902
+      spica 2-Sheet_5: -1926234989
+      spica 2-Sheet_6: -804805634
+      spica 2-Sheet_7: 916334259
+      spica 2-Sheet_8: -1170234138
+      spica 2-Sheet_9: -395271401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
