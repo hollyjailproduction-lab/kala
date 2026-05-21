@@ -8,17 +8,17 @@ public class BossHealth : EnemyHealth
     [SerializeField] private int phase2Threshold = 200;
     private bool isPhase2 = false;
 
-    public void ResetHealth()
+    public void ResetBossHealth()
     {
         // Reset health ke max
-        currentHp = maxHp;
+        base.ResetHealth();
         
         // Reset fase enrage
         isPhase2 = false;
         Animator anim = GetComponent<Animator>();
         if (anim != null)
             anim.SetBool("IsEnraged", false);
-        
+
         Debug.Log($"Boss health reset to {maxHp}");
     }
 
@@ -39,6 +39,7 @@ public class BossHealth : EnemyHealth
         base.OnDeath();
         if (deathEffect != null)
             Instantiate(deathEffect, transform.position, Quaternion.identity);
+
         Destroy(gameObject, 1f);
     }
 }

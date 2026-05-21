@@ -25,6 +25,7 @@ public class PlayerHealth : Health
     public override void TakeDamage(int damage, DamageSource source = DamageSource.Unknown, int enemyLevel = 0)
     {
         base.TakeDamage(damage, source, enemyLevel);
+        
         if (GameManager.instance != null)
             GameManager.instance.playerCurrentHealth = currentHp;
 

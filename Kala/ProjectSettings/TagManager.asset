@@ -53,12 +53,18 @@ TagManager:
   - name: Foreground
     uniqueID: 1596842771
     locked: 0
-  - name: Player
-    uniqueID: 338373589
-    locked: 0
   - name: Follower
     uniqueID: 2707548889
     locked: 0
   - name: Ground
     uniqueID: 1472896105
+    locked: 0
+  - name: Enemy
+    uniqueID: 3798391161
+    locked: 0
+  - name: Npc
+    uniqueID: 2201710057
+    locked: 0
+  - name: Player
+    uniqueID: 338373589
     locked: 0

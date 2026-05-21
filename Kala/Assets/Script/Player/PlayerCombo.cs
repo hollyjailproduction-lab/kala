@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerCombo : MonoBehaviour
 {
     public float comboWindow = 0.4f;
@@ -7,38 +9,54 @@ public class PlayerCombo : MonoBehaviour
     public LayerMask enemyLayer;
     public Transform attackPoint;
 
+    private static readonly int[] AttackHashes =
+    {
+        Animator.StringToHash("Attack1"),
+        Animator.StringToHash("Attack2"),
+        Animator.StringToHash("Attack3"),
+    };
+
     private Animator anim;
+    private PlayerMovement playerMovement;
     private int currentAttack = 0;
     private float lastAttackTime;
     private bool isAttacking = false;
-    private bool pendingInput = false;  // buffer input selama animasi
+    private bool pendingInput = false;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        TryGetComponent(out playerMovement);
     }
 
-    void Update()
+    // gamepad buttonWest / mouse klik kiri
+    public void OnAttack(InputAction.CallbackContext context)
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!context.performed) return;
+        if (playerMovement != null && !playerMovement.canAttack()) return;
+
+        // Reset state
+        if (isAttacking && Time.time - lastAttackTime > comboWindow)
         {
-            if (!isAttacking)
-            {
-                // Mulai kombo baru
-                currentAttack = 1;
-                ExecuteAttack();
-            }
-            else if (currentAttack < 3)
-            {
-                // Buffer input untuk kombo berikutnya
-                pendingInput = true;
-            }
+            isAttacking = false;
+            currentAttack = 0;
+            pendingInput = false;
+        }
+
+        if (!isAttacking)
+        {
+            currentAttack = 1;
+            ExecuteAttack();
+        }
+        else if (currentAttack < 3)
+        {
+            pendingInput = true;
         }
     }
 
     void ExecuteAttack()
     {
-        anim.SetTrigger($"Attack{currentAttack}");
+        anim.SetTrigger(AttackHashes[currentAttack - 1]);
         lastAttackTime = Time.time;
         isAttacking = true;
         pendingInput = false;
@@ -66,12 +84,13 @@ public class PlayerCombo : MonoBehaviour
     // Animation Event – frame damage
     public void ComboApplyDamage()
     {
+        if (currentAttack < 1 || currentAttack > damage.Length) return;
         int dmg = damage[currentAttack - 1];
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, 1.2f, enemyLayer);
         foreach (var hit in hits)
         {
-            Health health = hit.GetComponent<Health>();
-            if (health != null) health.TakeDamage(dmg, DamageSource.Player);
+            if (hit.TryGetComponent(out Health health))
+                health.TakeDamage(dmg, DamageSource.Player);
         }
     }
 
@@ -80,6 +99,13 @@ public class PlayerCombo : MonoBehaviour
         isAttacking = false;
         pendingInput = false;
         currentAttack = 0;
+
+        if (anim != null)
+        {
+            foreach (int hash in AttackHashes)
+                anim.ResetTrigger(hash);
+        }
+
         Debug.Log("Attack cancelled due to damage");
     }
 }

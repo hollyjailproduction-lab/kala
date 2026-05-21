@@ -8,9 +8,12 @@ public class InteractionDetector : MonoBehaviour
     private IInteractable interactableInRange= null;
     public GameObject interactionIcon;
 
+    private Vector3 initLocalScale;
+
     void Start()
     {
         interactionIcon.SetActive(false);
+        initLocalScale = transform.localScale;
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -26,7 +29,13 @@ public class InteractionDetector : MonoBehaviour
         if(collision.TryGetComponent(out IInteractable interactable) && interactable.Caninteract())
         {
             interactableInRange = interactable;
-            interactionIcon.SetActive(true);
+
+            if (interactable.CanDirectInteract())
+                interactableInRange.Interact();
+            else
+                interactionIcon.SetActive(true);
+            
+
         }
     }
 
@@ -37,5 +46,20 @@ public class InteractionDetector : MonoBehaviour
             interactableInRange = null;
             interactionIcon.SetActive(false);
         }
+    }
+
+
+    private void LateUpdate()
+    {
+        // Counteract parent X flip — health bar sentiasa hadap depan
+        float worldScaleX = transform.parent.lossyScale.x;
+        
+        worldScaleX = (GetComponent<PlayerHealth>() != null) ? transform.lossyScale.x: worldScaleX; 
+
+        transform.localScale = new Vector3(
+            worldScaleX < 0 ? -initLocalScale.x : initLocalScale.x,
+            initLocalScale.y,
+            initLocalScale.z
+        );
     }
 }

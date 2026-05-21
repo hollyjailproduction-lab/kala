@@ -42,5 +42,6 @@ public abstract class Health : MonoBehaviour
     }
 
     public virtual void Revive() { }
+    public virtual void ResetHealth() { }
     public virtual void AddMaxHealth(int amount) { }
 }

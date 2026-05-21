@@ -64,7 +64,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.114565, y: -0.18908796}
+  m_Offset: {x: 0, y: -0.18908796}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -77,37 +77,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2903646, y: 0.6218241}
   m_EdgeRadius: 0
---- !u!1 &1819783448072192460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052838996887577260}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1052838996887577260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819783448072192460}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.518, y: -0.166, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8281194462442995768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106561307816607527
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,14 +104,14 @@ RectTransform:
   m_GameObject: {fileID: 2106561307816607527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7002736065316535367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.011, y: 0.112}
+  m_AnchoredPosition: {x: 0.04, y: 0.5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6087252849391851021
@@ -191,9 +160,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 338373589
+  m_SortingLayer: 7
+  m_SortingOrder: 11
   m_Sprite: {fileID: -447720223, guid: a962f4d433e959c4bb67764b445e0024, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -246,7 +215,6 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1052838996887577260}
   - {fileID: 7002736065316535367}
   - {fileID: 1016011418501351671}
   m_Father: {fileID: 0}
@@ -290,7 +258,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 338373589
-  m_SortingLayer: 3
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2087473630, guid: 92f26d20f9c7e5244bd8c968c61c3a8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -335,7 +303,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2791291, y: -0.18383181}
+  m_Offset: {x: 0, y: -0.18383181}
   m_Size: {x: 0.29718027, y: 0.63233656}
   m_Direction: 0
 --- !u!50 &7421047792117207320
@@ -383,8 +351,10 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  speed: 3
-  jumpForce: 5
+  speed: 5
+  jumpForce: 7.5
+  slideDuration: 0.4
+  slideSpeedMultiplier: 2.1
 --- !u!95 &2475393792463432191
 Animator:
   serializedVersion: 5
@@ -563,6 +533,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9a6e40a5-b639-4641-9117-7a2d7b881011
     m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8383970196347390691}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnSlide
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7a5018f8-26e1-428e-8a84-ba4f9119d8c8
+    m_ActionName: Player/Slide[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5023235741670217959}
+        m_TargetAssemblyTypeName: PlayerCombo, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f92a2d47-c80a-4c25-a1a8-e95f02b11d5e
+    m_ActionName: Player/Attack[/DualShock4GamepadHID/buttonWest,/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -639,7 +641,7 @@ Transform:
   m_GameObject: {fileID: 8347126617423432285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.307, y: -0.019, z: 0}
+  m_LocalPosition: {x: 0, y: -0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -678,8 +680,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016771953, y: -0.18579876}
-  m_Size: {x: 0.5428747, y: 0.6284036}
+  m_Offset: {x: 0, y: 0.02}
+  m_Size: {x: 0.5428747, y: 1.11}
   m_Direction: 0
 --- !u!114 &1310024491721487607
 MonoBehaviour:

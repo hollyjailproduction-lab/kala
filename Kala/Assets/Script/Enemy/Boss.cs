@@ -39,6 +39,6 @@ public class Boss : MonoBehaviour
     public void ResetBossHealth()
     {
         BossHealth bh = GetComponent<BossHealth>();
-        if (bh != null) bh.ResetHealth();
+        if (bh != null) bh.ResetBossHealth();
     }
 }
