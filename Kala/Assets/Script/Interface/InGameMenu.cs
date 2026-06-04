@@ -34,6 +34,16 @@ public class InGameMenu : MonoBehaviour
 
     private void FindReferences()
     {
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == mainMenuSceneName || currentScene == "CutSceneNewGame")
+        {
+            Debug.Log($"InGameMenu: di scene {currentScene}, skip mencari references.");
+            return;
+        }
+
+        if (inventoryPage == null)
+        inventoryPage = FindObjectOfType<InventoryPage>();
+        
         // Jika sedang di scene MainMenu, tidak perlu mencari menuPanel atau inventoryPage
         if (SceneManager.GetActiveScene().name == mainMenuSceneName)
         {
@@ -71,6 +81,8 @@ public class InGameMenu : MonoBehaviour
         {
             SetupMenuPanelButtons();
         }
+
+        
     }
 
     private void SetupMenuPanelButtons()

@@ -1993,6 +1993,147 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6e01c318993214999d6c669dc88877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &311280335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311280338}
+  - component: {fileID: 311280337}
+  - component: {fileID: 311280336}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &311280336
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311280335}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 60a04c912fd1ab8468d0543de990ef3d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &311280337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311280335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2df8ad233f00048aced44bc01e69d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &311280338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311280335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.458746, y: 13.560245, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &312564975
 GameObject:
   m_ObjectHideFlags: 0
@@ -12738,8 +12879,8 @@ Transform:
   m_GameObject: {fileID: 954204015}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.53, y: -0.02, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -17.344, y: -0.257, z: 0}
+  m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1917080968}
@@ -13528,19 +13669,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.41
+      value: -31.6173
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.929
+      value: -1.1782
       objectReference: {fileID: 0}
     - target: {fileID: 8281194462442995768, guid: 3c492de6daace09418b52b4041721382, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37534,8 +37679,8 @@ Transform:
   m_GameObject: {fileID: 2048913623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.91, y: 0.42, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 45.6694, y: -0.195, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0.7434}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1917080968}
@@ -37569,8 +37714,7 @@ MonoBehaviour:
       aku yakin ini ulah nocturn
     - 'bagaimana kamu tahu? '
     - 'Apa kamu lihat nocturn '
-    - 'Tentu saja, karena ada bercak kelopak hitam milik nocturn Tidak, tapi ada
-      bercak kelopak hitam milik nocturn '
+    - Tentu saja, karena ada bercak kelopak hitam milik nocturn
     - 'Kalian datang untuk memburu mereka kan, coba lah periksa bawah tanah, mungkin
       ada sesuatu! '
     spriteArray:
@@ -38049,12 +38193,24 @@ PrefabInstance:
       value: FrouraV2
       objectReference: {fileID: 0}
     - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.9
+      value: -33.6
       objectReference: {fileID: 0}
     - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 8480679854732247237, guid: 70d38690dbc5b419a931ebd0ea6fb3ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38112,3 +38268,4 @@ SceneRoots:
   - {fileID: 339144695}
   - {fileID: 383857830}
   - {fileID: 1630549840}
+  - {fileID: 311280338}
