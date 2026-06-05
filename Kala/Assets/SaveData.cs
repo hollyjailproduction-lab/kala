@@ -7,4 +7,5 @@ public class SaveData
     public int playerCurrentHealth;
     public int playerMaxHealth;
     public string lastSceneName; // <-- untuk menyimpan scene terakhir
+    public int remainingDays;
 }

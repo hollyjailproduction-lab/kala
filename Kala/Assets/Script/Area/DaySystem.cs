@@ -116,7 +116,7 @@ public class DaySystem : MonoBehaviour
     /// <summary>
     /// Kurangi hari. Jika habis, cek apakah Froura bisa revive atau bad ending.
     /// </summary>
-    private void ReduceDays(int amount)
+    public void ReduceDays(int amount)
     {
         RemainingDays -= amount;
 
@@ -152,12 +152,20 @@ public class DaySystem : MonoBehaviour
     /// <summary>
     /// Bad ending - hari habis atau 5x mati kena trap.
     /// </summary>
-    private void TriggerBadEnding()
+    public void TriggerBadEnding()
     {
         Debug.Log("[DaySystem] === BAD ENDING === Game Over! Harus mulai New Game.");
 
-        // TODO: Tampilkan Game Over screen / Bad Ending screen
-        // Untuk sekarang, log saja. Nanti bisa panggil GameOverManager.
+        // Delete save data so continue button disappears
+        SaveController saveController = FindObjectOfType<SaveController>();
+        if (saveController != null)
+        {
+            saveController.DeleteSaveData();
+        }
+
+        // Load Cutscene Game Over
+        // User requested: "tapi bakal ada cut scene nya (video) dulu yang di putar nantinya sebelum balik ke main menu"
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverCutscene");
     }
 
     /// <summary>

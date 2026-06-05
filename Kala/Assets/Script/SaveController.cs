@@ -24,6 +24,10 @@ public class SaveController : MonoBehaviour
         saveData.playerCurrentHealth = playerHealth.currentHp;
         saveData.playerMaxHealth = playerHealth.maxHp;
         saveData.lastSceneName = SceneManager.GetActiveScene().name; // simpan scene aktif
+        if (GameManager.instance != null)
+        {
+            saveData.remainingDays = GameManager.instance.remainingDays;
+        }
 
         string json = JsonUtility.ToJson(saveData, true);
         File.WriteAllText(saveLocation, json);
@@ -76,6 +80,7 @@ public class SaveController : MonoBehaviour
             GameManager.instance.playerCurrentHealth = saveData.playerCurrentHealth;
             GameManager.instance.playerMaxHealth = saveData.playerMaxHealth;
             GameManager.instance.UpdateCheckPoint(saveData.playerPosition);
+            GameManager.instance.remainingDays = saveData.remainingDays;
         }
     }
 
@@ -99,8 +104,16 @@ public class SaveController : MonoBehaviour
     // (Opsional) Method untuk new game – hapus file save
     public void NewGame()
     {
-        if (File.Exists(saveLocation))
-            File.Delete(saveLocation);
+        DeleteSaveData();
         SceneManager.LoadScene("YourFirstSceneName"); // ganti dengan scene awal game
+    }
+
+    public void DeleteSaveData()
+    {
+        if (File.Exists(saveLocation))
+        {
+            File.Delete(saveLocation);
+            Debug.Log("Save data deleted due to Game Over or New Game.");
+        }
     }
 }

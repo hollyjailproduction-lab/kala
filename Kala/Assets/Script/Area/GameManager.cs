@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public int mapDeathCount = 0;
     public bool frouraRevived = false;
 
+    private string lastLoadedSceneName;
+    private bool isRespawning = false;
+
     public static GameManager instance { get; private set; }
 
     private void Awake()
@@ -64,6 +67,8 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        lastLoadedSceneName = scene.name;
+
         SyncCheckpointsWithSave();
         RefreshPlayerReference();
 
@@ -130,6 +135,22 @@ public class GameManager : MonoBehaviour
 
     public void die()
     {
+        // Reduce days by 2 on death
+        if (DaySystem.Instance != null)
+            DaySystem.Instance.ReduceDays(2);
+        else
+            remainingDays -= 2;
+
+        if (remainingDays <= 0)
+        {
+            if (DaySystem.Instance != null)
+            {
+                DaySystem.Instance.TriggerBadEnding();
+                return; // Stop the respawn process
+            }
+        }
+
+        isRespawning = true;
         string currentScene = SceneManager.GetActiveScene().name;
         if (checkpointScene != currentScene)
         {
@@ -171,6 +192,8 @@ public class GameManager : MonoBehaviour
 
         Health playerHealth = playerTransform.GetComponent<Health>();
         if (playerHealth != null) playerHealth.Revive();
+
+        isRespawning = false;
     }
 
     IEnumerator AnimatedRespawn(float duration)
@@ -200,6 +223,7 @@ public class GameManager : MonoBehaviour
         if (playerHealth != null) playerHealth.Revive();
 
         playerRb.simulated = true;
+        isRespawning = false;
     }
 
     IEnumerator respawn(float duration)
@@ -235,6 +259,7 @@ public class GameManager : MonoBehaviour
         if (playerHealth != null) playerHealth.Revive();
 
         playerRb.simulated = true;
+        isRespawning = false;
     }
 
     void SyncCheckpointsWithSave()
