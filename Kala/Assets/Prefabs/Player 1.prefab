@@ -94,7 +94,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4215317602174489692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -565,6 +565,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f92a2d47-c80a-4c25-a1a8-e95f02b11d5e
     m_ActionName: Player/Attack[/DualShock4GamepadHID/buttonWest,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 56c3ad8f-25f7-460e-9223-9699f00fc3e0
+    m_ActionName: Player/Dialog[/Keyboard/space,/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
